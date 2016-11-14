@@ -13,6 +13,26 @@
 		D1A854151DD968C000607C0A /* FGFastInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854101DD968C000607C0A /* FGFastInit.m */; };
 		D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854121DD968C000607C0A /* FGSizeTool.m */; };
 		D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854141DD968C000607C0A /* FGHttpTool.m */; };
+		D1A8541C1DD9787B00607C0A /* Cosmic Love-.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1A854181DD9787B00607C0A /* Cosmic Love-.ttf */; };
+		D1A8541D1DD9787B00607C0A /* PMingLiU.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1A854191DD9787B00607C0A /* PMingLiU.ttf */; };
+		D1A8541E1DD9787B00607C0A /* TpldKhangXiDictTrial.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1A8541A1DD9787B00607C0A /* TpldKhangXiDictTrial.otf */; };
+		D1A8541F1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1A8541B1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf */; };
+		D1A8543C1DD97F4500607C0A /* NSString+FG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8543B1DD97F4500607C0A /* NSString+FG.m */; };
+		D1A8543F1DD9806200607C0A /* UIImage+FG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8543E1DD9806200607C0A /* UIImage+FG.m */; };
+		D1A854421DD9825900607C0A /* UIView+FG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854411DD9825900607C0A /* UIView+FG.m */; };
+		D1A854451DD982FB00607C0A /* UIBezierPath+FG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854441DD982FB00607C0A /* UIBezierPath+FG.m */; };
+		D1A8544B1DD9844B00607C0A /* UITableView+FG.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8544A1DD9844B00607C0A /* UITableView+FG.m */; };
+		D1A8544E1DD984E000607C0A /* FGHealthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8544D1DD984E000607C0A /* FGHealthTool.m */; };
+		D1A854551DD9879400607C0A /* FGCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854531DD9879400607C0A /* FGCarouselView.m */; };
+		D1A854581DD987B800607C0A /* FGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854571DD987B800607C0A /* FGTextField.m */; };
+		D1A8545B1DD9883F00607C0A /* UIButton+FGCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8545A1DD9883F00607C0A /* UIButton+FGCountDown.m */; };
+		D1A8546D1DD988EE00607C0A /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854601DD988EE00607C0A /* CYLPlusButton.m */; };
+		D1A8546E1DD988EE00607C0A /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854621DD988EE00607C0A /* CYLTabBar.m */; };
+		D1A8546F1DD988EE00607C0A /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854641DD988EE00607C0A /* CYLTabBarController.m */; };
+		D1A854701DD988EE00607C0A /* FGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854671DD988EE00607C0A /* FGNavigationController.m */; };
+		D1A854711DD988EE00607C0A /* FGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854691DD988EE00607C0A /* FGTabBarController.m */; };
+		D1A854721DD988EE00607C0A /* FGSwipeViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A8546C1DD988EE00607C0A /* FGSwipeViewControllers.m */; };
+		D1A854751DD989FD00607C0A /* FGToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854741DD989FD00607C0A /* FGToast.m */; };
 		D1B401981DCC58C800252F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B401971DCC58C800252F8D /* main.m */; };
 		D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019A1DCC58C800252F8D /* AppDelegate.m */; };
 		D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019D1DCC58C800252F8D /* ViewController.m */; };
@@ -56,6 +76,42 @@
 		D1A854121DD968C000607C0A /* FGSizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSizeTool.m; sourceTree = "<group>"; };
 		D1A854131DD968C000607C0A /* FGHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHttpTool.h; sourceTree = "<group>"; };
 		D1A854141DD968C000607C0A /* FGHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHttpTool.m; sourceTree = "<group>"; };
+		D1A854181DD9787B00607C0A /* Cosmic Love-.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cosmic Love-.ttf"; sourceTree = "<group>"; };
+		D1A854191DD9787B00607C0A /* PMingLiU.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PMingLiU.ttf; sourceTree = "<group>"; };
+		D1A8541A1DD9787B00607C0A /* TpldKhangXiDictTrial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TpldKhangXiDictTrial.otf; sourceTree = "<group>"; };
+		D1A8541B1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyue-GutiFangsong-NC_deliverable.otf"; sourceTree = "<group>"; };
+		D1A8543A1DD97F4500607C0A /* NSString+FG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FG.h"; sourceTree = "<group>"; };
+		D1A8543B1DD97F4500607C0A /* NSString+FG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FG.m"; sourceTree = "<group>"; };
+		D1A8543D1DD9806200607C0A /* UIImage+FG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FG.h"; sourceTree = "<group>"; };
+		D1A8543E1DD9806200607C0A /* UIImage+FG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FG.m"; sourceTree = "<group>"; };
+		D1A854401DD9825900607C0A /* UIView+FG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FG.h"; sourceTree = "<group>"; };
+		D1A854411DD9825900607C0A /* UIView+FG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FG.m"; sourceTree = "<group>"; };
+		D1A854431DD982FB00607C0A /* UIBezierPath+FG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+FG.h"; sourceTree = "<group>"; };
+		D1A854441DD982FB00607C0A /* UIBezierPath+FG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+FG.m"; sourceTree = "<group>"; };
+		D1A854491DD9844B00607C0A /* UITableView+FG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FG.h"; sourceTree = "<group>"; };
+		D1A8544A1DD9844B00607C0A /* UITableView+FG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FG.m"; sourceTree = "<group>"; };
+		D1A8544C1DD984E000607C0A /* FGHealthTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHealthTool.h; sourceTree = "<group>"; };
+		D1A8544D1DD984E000607C0A /* FGHealthTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHealthTool.m; sourceTree = "<group>"; };
+		D1A854521DD9879400607C0A /* FGCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGCarouselView.h; sourceTree = "<group>"; };
+		D1A854531DD9879400607C0A /* FGCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGCarouselView.m; sourceTree = "<group>"; };
+		D1A854561DD987B800607C0A /* FGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTextField.h; sourceTree = "<group>"; };
+		D1A854571DD987B800607C0A /* FGTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTextField.m; sourceTree = "<group>"; };
+		D1A854591DD9883F00607C0A /* UIButton+FGCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FGCountDown.h"; sourceTree = "<group>"; };
+		D1A8545A1DD9883F00607C0A /* UIButton+FGCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FGCountDown.m"; sourceTree = "<group>"; };
+		D1A8545F1DD988EE00607C0A /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		D1A854601DD988EE00607C0A /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		D1A854611DD988EE00607C0A /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		D1A854621DD988EE00607C0A /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		D1A854631DD988EE00607C0A /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		D1A854641DD988EE00607C0A /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		D1A854661DD988EE00607C0A /* FGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGNavigationController.h; sourceTree = "<group>"; };
+		D1A854671DD988EE00607C0A /* FGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGNavigationController.m; sourceTree = "<group>"; };
+		D1A854681DD988EE00607C0A /* FGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTabBarController.h; sourceTree = "<group>"; };
+		D1A854691DD988EE00607C0A /* FGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTabBarController.m; sourceTree = "<group>"; };
+		D1A8546B1DD988EE00607C0A /* FGSwipeViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSwipeViewControllers.h; sourceTree = "<group>"; };
+		D1A8546C1DD988EE00607C0A /* FGSwipeViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSwipeViewControllers.m; sourceTree = "<group>"; };
+		D1A854731DD989FD00607C0A /* FGToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGToast.h; sourceTree = "<group>"; };
+		D1A854741DD989FD00607C0A /* FGToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGToast.m; sourceTree = "<group>"; };
 		D1B401931DCC58C800252F8D /* destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = destiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B401971DCC58C800252F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1B401991DCC58C800252F8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +194,9 @@
 		D15B368B1DD960CC00A8A0C3 /* FGWorkBag */ = {
 			isa = PBXGroup;
 			children = (
+				D1A8544F1DD9879400607C0A /* FGConstructions */,
+				D1A854501DD9879400607C0A /* FGViews */,
+				D1A854361DD97EC600607C0A /* FGCategory */,
 				D1A8540E1DD968C000607C0A /* Tools */,
 				D1A854071DD966B200607C0A /* FontSources */,
 				D1A854001DD9660200607C0A /* Macro */,
@@ -211,6 +270,10 @@
 		D1A854071DD966B200607C0A /* FontSources */ = {
 			isa = PBXGroup;
 			children = (
+				D1A854181DD9787B00607C0A /* Cosmic Love-.ttf */,
+				D1A854191DD9787B00607C0A /* PMingLiU.ttf */,
+				D1A8541A1DD9787B00607C0A /* TpldKhangXiDictTrial.otf */,
+				D1A8541B1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf */,
 			);
 			path = FontSources;
 			sourceTree = "<group>";
@@ -218,14 +281,125 @@
 		D1A8540E1DD968C000607C0A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				D1A854731DD989FD00607C0A /* FGToast.h */,
+				D1A854741DD989FD00607C0A /* FGToast.m */,
 				D1A8540F1DD968C000607C0A /* FGFastInit.h */,
 				D1A854101DD968C000607C0A /* FGFastInit.m */,
 				D1A854111DD968C000607C0A /* FGSizeTool.h */,
 				D1A854121DD968C000607C0A /* FGSizeTool.m */,
 				D1A854131DD968C000607C0A /* FGHttpTool.h */,
 				D1A854141DD968C000607C0A /* FGHttpTool.m */,
+				D1A8544C1DD984E000607C0A /* FGHealthTool.h */,
+				D1A8544D1DD984E000607C0A /* FGHealthTool.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		D1A854361DD97EC600607C0A /* FGCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8543A1DD97F4500607C0A /* NSString+FG.h */,
+				D1A8543B1DD97F4500607C0A /* NSString+FG.m */,
+				D1A8543D1DD9806200607C0A /* UIImage+FG.h */,
+				D1A8543E1DD9806200607C0A /* UIImage+FG.m */,
+				D1A854401DD9825900607C0A /* UIView+FG.h */,
+				D1A854411DD9825900607C0A /* UIView+FG.m */,
+				D1A854431DD982FB00607C0A /* UIBezierPath+FG.h */,
+				D1A854441DD982FB00607C0A /* UIBezierPath+FG.m */,
+				D1A854491DD9844B00607C0A /* UITableView+FG.h */,
+				D1A8544A1DD9844B00607C0A /* UITableView+FG.m */,
+				D1A854591DD9883F00607C0A /* UIButton+FGCountDown.h */,
+				D1A8545A1DD9883F00607C0A /* UIButton+FGCountDown.m */,
+			);
+			path = FGCategory;
+			sourceTree = "<group>";
+		};
+		D1A8544F1DD9879400607C0A /* FGConstructions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FGConstructions;
+			sourceTree = "<group>";
+		};
+		D1A854501DD9879400607C0A /* FGViews */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8545C1DD988EE00607C0A /* FGConstructions */,
+				D1A854511DD9879400607C0A /* FGSrollView */,
+				D1A854541DD9879400607C0A /* FGTextField */,
+			);
+			path = FGViews;
+			sourceTree = "<group>";
+		};
+		D1A854511DD9879400607C0A /* FGSrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D1A854521DD9879400607C0A /* FGCarouselView.h */,
+				D1A854531DD9879400607C0A /* FGCarouselView.m */,
+			);
+			path = FGSrollView;
+			sourceTree = "<group>";
+		};
+		D1A854541DD9879400607C0A /* FGTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D1A854561DD987B800607C0A /* FGTextField.h */,
+				D1A854571DD987B800607C0A /* FGTextField.m */,
+			);
+			path = FGTextField;
+			sourceTree = "<group>";
+		};
+		D1A8545C1DD988EE00607C0A /* FGConstructions */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8545D1DD988EE00607C0A /* FGTabBarController */,
+				D1A8546A1DD988EE00607C0A /* FGSwipeViewController */,
+			);
+			name = FGConstructions;
+			path = destiny/FGWorkBag/FGConstructions;
+			sourceTree = SOURCE_ROOT;
+		};
+		D1A8545D1DD988EE00607C0A /* FGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8545E1DD988EE00607C0A /* CYLTabBarController */,
+				D1A854651DD988EE00607C0A /* UWTabBar+Nav */,
+			);
+			path = FGTabBarController;
+			sourceTree = "<group>";
+		};
+		D1A8545E1DD988EE00607C0A /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8545F1DD988EE00607C0A /* CYLPlusButton.h */,
+				D1A854601DD988EE00607C0A /* CYLPlusButton.m */,
+				D1A854611DD988EE00607C0A /* CYLTabBar.h */,
+				D1A854621DD988EE00607C0A /* CYLTabBar.m */,
+				D1A854631DD988EE00607C0A /* CYLTabBarController.h */,
+				D1A854641DD988EE00607C0A /* CYLTabBarController.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		D1A854651DD988EE00607C0A /* UWTabBar+Nav */ = {
+			isa = PBXGroup;
+			children = (
+				D1A854661DD988EE00607C0A /* FGNavigationController.h */,
+				D1A854671DD988EE00607C0A /* FGNavigationController.m */,
+				D1A854681DD988EE00607C0A /* FGTabBarController.h */,
+				D1A854691DD988EE00607C0A /* FGTabBarController.m */,
+			);
+			path = "UWTabBar+Nav";
+			sourceTree = "<group>";
+		};
+		D1A8546A1DD988EE00607C0A /* FGSwipeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8546B1DD988EE00607C0A /* FGSwipeViewControllers.h */,
+				D1A8546C1DD988EE00607C0A /* FGSwipeViewControllers.m */,
+			);
+			name = FGSwipeViewController;
+			path = SwipeVC;
 			sourceTree = "<group>";
 		};
 		D1B4018A1DCC58C800252F8D = {
@@ -412,7 +586,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A8541D1DD9787B00607C0A /* PMingLiU.ttf in Resources */,
+				D1A8541E1DD9787B00607C0A /* TpldKhangXiDictTrial.otf in Resources */,
 				D1B401A31DCC58C800252F8D /* Assets.xcassets in Resources */,
+				D1A8541C1DD9787B00607C0A /* Cosmic Love-.ttf in Resources */,
+				D1A8541F1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,12 +738,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A8546E1DD988EE00607C0A /* CYLTabBar.m in Sources */,
+				D1A854581DD987B800607C0A /* FGTextField.m in Sources */,
+				D1A854451DD982FB00607C0A /* UIBezierPath+FG.m in Sources */,
+				D1A854701DD988EE00607C0A /* FGNavigationController.m in Sources */,
+				D1A854711DD988EE00607C0A /* FGTabBarController.m in Sources */,
+				D1A854751DD989FD00607C0A /* FGToast.m in Sources */,
+				D1A8546D1DD988EE00607C0A /* CYLPlusButton.m in Sources */,
 				D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */,
+				D1A854721DD988EE00607C0A /* FGSwipeViewControllers.m in Sources */,
+				D1A8543F1DD9806200607C0A /* UIImage+FG.m in Sources */,
 				D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */,
+				D1A8544B1DD9844B00607C0A /* UITableView+FG.m in Sources */,
+				D1A8546F1DD988EE00607C0A /* CYLTabBarController.m in Sources */,
 				D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */,
+				D1A8544E1DD984E000607C0A /* FGHealthTool.m in Sources */,
+				D1A8545B1DD9883F00607C0A /* UIButton+FGCountDown.m in Sources */,
 				D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */,
 				D1A854151DD968C000607C0A /* FGFastInit.m in Sources */,
+				D1A8543C1DD97F4500607C0A /* NSString+FG.m in Sources */,
+				D1A854551DD9879400607C0A /* FGCarouselView.m in Sources */,
 				D1B401981DCC58C800252F8D /* main.m in Sources */,
+				D1A854421DD9825900607C0A /* UIView+FG.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +820,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -676,6 +871,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
