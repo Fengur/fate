@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B7BB82B5EAC02C938E4A6ED /* libPods-destinyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */; };
+		8BBF007D111A83336FF361EC /* libPods-destinyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32556110487F675B55EB337C /* libPods-destinyUITests.a */; };
+		B745E0FA1F4E2F7407447D5D /* libPods-destiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */; };
+		D1B401981DCC58C800252F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B401971DCC58C800252F8D /* main.m */; };
+		D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019A1DCC58C800252F8D /* AppDelegate.m */; };
+		D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019D1DCC58C800252F8D /* ViewController.m */; };
+		D1B401A31DCC58C800252F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B401A21DCC58C800252F8D /* Assets.xcassets */; };
+		D1B401B11DCC58C800252F8D /* destinyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B401B01DCC58C800252F8D /* destinyTests.m */; };
+		D1B401BC1DCC58C800252F8D /* destinyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B401BB1DCC58C800252F8D /* destinyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1B401AD1DCC58C800252F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B4018B1DCC58C800252F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1B401921DCC58C800252F8D;
+			remoteInfo = destiny;
+		};
+		D1B401B81DCC58C800252F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B4018B1DCC58C800252F8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1B401921DCC58C800252F8D;
+			remoteInfo = destiny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ECC8DB3C43340E4CADDC31F /* Pods-destinyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destinyUITests/Pods-destinyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32556110487F675B55EB337C /* libPods-destinyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-destinyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BCFC3BCA58A0C8C9DC18428 /* Pods-destiny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destiny.release.xcconfig"; path = "Pods/Target Support Files/Pods-destiny/Pods-destiny.release.xcconfig"; sourceTree = "<group>"; };
+		4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-destinyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destiny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destiny/Pods-destiny.debug.xcconfig"; sourceTree = "<group>"; };
+		A66875B7B9711737116FF14C /* Pods-destinyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-destinyUITests/Pods-destinyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destiny_PrefixHeader.pch; sourceTree = "<group>"; };
+		D1B401931DCC58C800252F8D /* destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = destiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B401971DCC58C800252F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1B401991DCC58C800252F8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D1B4019A1DCC58C800252F8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D1B4019C1DCC58C800252F8D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D1B4019D1DCC58C800252F8D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D1B401A21DCC58C800252F8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1B401A71DCC58C800252F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B401AC1DCC58C800252F8D /* destinyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = destinyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B401B01DCC58C800252F8D /* destinyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = destinyTests.m; sourceTree = "<group>"; };
+		D1B401B21DCC58C800252F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B401B71DCC58C800252F8D /* destinyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = destinyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B401BB1DCC58C800252F8D /* destinyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = destinyUITests.m; sourceTree = "<group>"; };
+		D1B401BD1DCC58C800252F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E037D8F1F85D4F175AC416A1 /* Pods-destinyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4FAE107223A0C906B2C4701 /* Pods-destinyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-destiny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1B401901DCC58C800252F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B745E0FA1F4E2F7407447D5D /* libPods-destiny.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401A91DCC58C800252F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7BB82B5EAC02C938E4A6ED /* libPods-destinyTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401B41DCC58C800252F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBF007D111A83336FF361EC /* libPods-destinyUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C1557F9D53FD530ABF55B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */,
+				4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */,
+				32556110487F675B55EB337C /* libPods-destinyUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B21B531633747901B7E0FDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */,
+				3BCFC3BCA58A0C8C9DC18428 /* Pods-destiny.release.xcconfig */,
+				E037D8F1F85D4F175AC416A1 /* Pods-destinyTests.debug.xcconfig */,
+				E4FAE107223A0C906B2C4701 /* Pods-destinyTests.release.xcconfig */,
+				2ECC8DB3C43340E4CADDC31F /* Pods-destinyUITests.debug.xcconfig */,
+				A66875B7B9711737116FF14C /* Pods-destinyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D15B368A1DD960CC00A8A0C3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D15B368B1DD960CC00A8A0C3 /* FGWorkBag */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FGWorkBag;
+			sourceTree = "<group>";
+		};
+		D15B368C1DD960CC00A8A0C3 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D15B368F1DD962A900A8A0C3 /* Home */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		D15B368D1DD9622500A8A0C3 /* ThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParts;
+			sourceTree = "<group>";
+		};
+		D15B368E1DD9622500A8A0C3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D15B368F1DD962A900A8A0C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D15B36901DD962A900A8A0C3 /* Controllers */,
+				D15B36911DD962A900A8A0C3 /* Models */,
+				D15B36921DD962A900A8A0C3 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D15B36901DD962A900A8A0C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D15B36911DD962A900A8A0C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D15B36921DD962A900A8A0C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1B4018A1DCC58C800252F8D = {
+			isa = PBXGroup;
+			children = (
+				D1B401951DCC58C800252F8D /* destiny */,
+				D1B401AF1DCC58C800252F8D /* destinyTests */,
+				D1B401BA1DCC58C800252F8D /* destinyUITests */,
+				D1B401941DCC58C800252F8D /* Products */,
+				9B21B531633747901B7E0FDF /* Pods */,
+				3C1557F9D53FD530ABF55B22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1B401941DCC58C800252F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1B401931DCC58C800252F8D /* destiny.app */,
+				D1B401AC1DCC58C800252F8D /* destinyTests.xctest */,
+				D1B401B71DCC58C800252F8D /* destinyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1B401951DCC58C800252F8D /* destiny */ = {
+			isa = PBXGroup;
+			children = (
+				D15B368C1DD960CC00A8A0C3 /* Functions */,
+				D15B368A1DD960CC00A8A0C3 /* Config */,
+				D15B368D1DD9622500A8A0C3 /* ThirdParts */,
+				D15B368E1DD9622500A8A0C3 /* Tools */,
+				D15B368B1DD960CC00A8A0C3 /* FGWorkBag */,
+				D1B401991DCC58C800252F8D /* AppDelegate.h */,
+				D1B4019A1DCC58C800252F8D /* AppDelegate.m */,
+				D1B4019C1DCC58C800252F8D /* ViewController.h */,
+				D1B4019D1DCC58C800252F8D /* ViewController.m */,
+				D1B401A21DCC58C800252F8D /* Assets.xcassets */,
+				D1B401A71DCC58C800252F8D /* Info.plist */,
+				D1B401961DCC58C800252F8D /* Supporting Files */,
+			);
+			path = destiny;
+			sourceTree = "<group>";
+		};
+		D1B401961DCC58C800252F8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1B401971DCC58C800252F8D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1B401AF1DCC58C800252F8D /* destinyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1B401B01DCC58C800252F8D /* destinyTests.m */,
+				D1B401B21DCC58C800252F8D /* Info.plist */,
+			);
+			path = destinyTests;
+			sourceTree = "<group>";
+		};
+		D1B401BA1DCC58C800252F8D /* destinyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1B401BB1DCC58C800252F8D /* destinyUITests.m */,
+				D1B401BD1DCC58C800252F8D /* Info.plist */,
+			);
+			path = destinyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1B401921DCC58C800252F8D /* destiny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B401C01DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destiny" */;
+			buildPhases = (
+				233726A9A1C2F38871BA007A /* [CP] Check Pods Manifest.lock */,
+				D1B4018F1DCC58C800252F8D /* Sources */,
+				D1B401901DCC58C800252F8D /* Frameworks */,
+				D1B401911DCC58C800252F8D /* Resources */,
+				F9D64409A0152B051A0089AD /* [CP] Embed Pods Frameworks */,
+				380A3A2C75ECCD571EC2CE14 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = destiny;
+			productName = destiny;
+			productReference = D1B401931DCC58C800252F8D /* destiny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1B401AB1DCC58C800252F8D /* destinyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B401C31DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destinyTests" */;
+			buildPhases = (
+				95E7EA9011F63DF3BA874BF5 /* [CP] Check Pods Manifest.lock */,
+				D1B401A81DCC58C800252F8D /* Sources */,
+				D1B401A91DCC58C800252F8D /* Frameworks */,
+				D1B401AA1DCC58C800252F8D /* Resources */,
+				4FAE035991D5D6506225AD41 /* [CP] Embed Pods Frameworks */,
+				8248B92384EFCA686ECB9625 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1B401AE1DCC58C800252F8D /* PBXTargetDependency */,
+			);
+			name = destinyTests;
+			productName = destinyTests;
+			productReference = D1B401AC1DCC58C800252F8D /* destinyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1B401B61DCC58C800252F8D /* destinyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B401C61DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destinyUITests" */;
+			buildPhases = (
+				6F7328330A83E141B8FA9BFC /* [CP] Check Pods Manifest.lock */,
+				D1B401B31DCC58C800252F8D /* Sources */,
+				D1B401B41DCC58C800252F8D /* Frameworks */,
+				D1B401B51DCC58C800252F8D /* Resources */,
+				C7CBADC6DDC940221CB8DEF7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1B401B91DCC58C800252F8D /* PBXTargetDependency */,
+			);
+			name = destinyUITests;
+			productName = destinyUITests;
+			productReference = D1B401B71DCC58C800252F8D /* destinyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1B4018B1DCC58C800252F8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = code.sogou.fengur;
+				TargetAttributes = {
+					D1B401921DCC58C800252F8D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 72474N4MWM;
+						ProvisioningStyle = Automatic;
+					};
+					D1B401AB1DCC58C800252F8D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 72474N4MWM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1B401921DCC58C800252F8D;
+					};
+					D1B401B61DCC58C800252F8D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 72474N4MWM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1B401921DCC58C800252F8D;
+					};
+				};
+			};
+			buildConfigurationList = D1B4018E1DCC58C800252F8D /* Build configuration list for PBXProject "destiny" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1B4018A1DCC58C800252F8D;
+			productRefGroup = D1B401941DCC58C800252F8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1B401921DCC58C800252F8D /* destiny */,
+				D1B401AB1DCC58C800252F8D /* destinyTests */,
+				D1B401B61DCC58C800252F8D /* destinyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1B401911DCC58C800252F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B401A31DCC58C800252F8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401AA1DCC58C800252F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401B51DCC58C800252F8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233726A9A1C2F38871BA007A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		380A3A2C75ECCD571EC2CE14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-destiny/Pods-destiny-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FAE035991D5D6506225AD41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7328330A83E141B8FA9BFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8248B92384EFCA686ECB9625 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E7EA9011F63DF3BA874BF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7CBADC6DDC940221CB8DEF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-destinyUITests/Pods-destinyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D64409A0152B051A0089AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-destiny/Pods-destiny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1B4018F1DCC58C800252F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */,
+				D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */,
+				D1B401981DCC58C800252F8D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401A81DCC58C800252F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B401B11DCC58C800252F8D /* destinyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B401B31DCC58C800252F8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B401BC1DCC58C800252F8D /* destinyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1B401AE1DCC58C800252F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1B401921DCC58C800252F8D /* destiny */;
+			targetProxy = D1B401AD1DCC58C800252F8D /* PBXContainerItemProxy */;
+		};
+		D1B401B91DCC58C800252F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1B401921DCC58C800252F8D /* destiny */;
+			targetProxy = D1B401B81DCC58C800252F8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D1B401BE1DCC58C800252F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = destiny/Config/destiny_PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1B401BF1DCC58C800252F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = destiny/Config/destiny_PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1B401C11DCC58C800252F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destiny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destiny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1B401C21DCC58C800252F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCFC3BCA58A0C8C9DC18428 /* Pods-destiny.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destiny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destiny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D1B401C41DCC58C800252F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E037D8F1F85D4F175AC416A1 /* Pods-destinyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destinyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destinyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/destiny.app/destiny";
+			};
+			name = Debug;
+		};
+		D1B401C51DCC58C800252F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FAE107223A0C906B2C4701 /* Pods-destinyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destinyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destinyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/destiny.app/destiny";
+			};
+			name = Release;
+		};
+		D1B401C71DCC58C800252F8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECC8DB3C43340E4CADDC31F /* Pods-destinyUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destinyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destinyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = destiny;
+			};
+			name = Debug;
+		};
+		D1B401C81DCC58C800252F8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66875B7B9711737116FF14C /* Pods-destinyUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 72474N4MWM;
+				INFOPLIST_FILE = destinyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = code.fengur.destinyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = destiny;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1B4018E1DCC58C800252F8D /* Build configuration list for PBXProject "destiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B401BE1DCC58C800252F8D /* Debug */,
+				D1B401BF1DCC58C800252F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B401C01DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B401C11DCC58C800252F8D /* Debug */,
+				D1B401C21DCC58C800252F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B401C31DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destinyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B401C41DCC58C800252F8D /* Debug */,
+				D1B401C51DCC58C800252F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B401C61DCC58C800252F8D /* Build configuration list for PBXNativeTarget "destinyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B401C71DCC58C800252F8D /* Debug */,
+				D1B401C81DCC58C800252F8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1B4018B1DCC58C800252F8D /* Project object */;
+}
