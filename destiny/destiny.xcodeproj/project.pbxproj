@@ -10,6 +10,9 @@
 		1B7BB82B5EAC02C938E4A6ED /* libPods-destinyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */; };
 		8BBF007D111A83336FF361EC /* libPods-destinyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32556110487F675B55EB337C /* libPods-destinyUITests.a */; };
 		B745E0FA1F4E2F7407447D5D /* libPods-destiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */; };
+		D1A854151DD968C000607C0A /* FGFastInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854101DD968C000607C0A /* FGFastInit.m */; };
+		D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854121DD968C000607C0A /* FGSizeTool.m */; };
+		D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854141DD968C000607C0A /* FGHttpTool.m */; };
 		D1B401981DCC58C800252F8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B401971DCC58C800252F8D /* main.m */; };
 		D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019A1DCC58C800252F8D /* AppDelegate.m */; };
 		D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B4019D1DCC58C800252F8D /* ViewController.m */; };
@@ -43,6 +46,16 @@
 		629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destiny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destiny/Pods-destiny.debug.xcconfig"; sourceTree = "<group>"; };
 		A66875B7B9711737116FF14C /* Pods-destinyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-destinyUITests/Pods-destinyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destiny_PrefixHeader.pch; sourceTree = "<group>"; };
+		D1A854011DD9663000607C0A /* FGColorsAndFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGColorsAndFonts.h; sourceTree = "<group>"; };
+		D1A854041DD9668800607C0A /* FGObjectFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGObjectFunction.h; sourceTree = "<group>"; };
+		D1A854081DD966D500607C0A /* DSColorAndFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSColorAndFonts.h; sourceTree = "<group>"; };
+		D1A8540B1DD9670700607C0A /* FGSizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSizes.h; sourceTree = "<group>"; };
+		D1A8540F1DD968C000607C0A /* FGFastInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGFastInit.h; sourceTree = "<group>"; };
+		D1A854101DD968C000607C0A /* FGFastInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFastInit.m; sourceTree = "<group>"; };
+		D1A854111DD968C000607C0A /* FGSizeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSizeTool.h; sourceTree = "<group>"; };
+		D1A854121DD968C000607C0A /* FGSizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSizeTool.m; sourceTree = "<group>"; };
+		D1A854131DD968C000607C0A /* FGHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHttpTool.h; sourceTree = "<group>"; };
+		D1A854141DD968C000607C0A /* FGHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHttpTool.m; sourceTree = "<group>"; };
 		D1B401931DCC58C800252F8D /* destiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = destiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B401971DCC58C800252F8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1B401991DCC58C800252F8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */,
+				D1A854081DD966D500607C0A /* DSColorAndFonts.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -124,6 +138,9 @@
 		D15B368B1DD960CC00A8A0C3 /* FGWorkBag */ = {
 			isa = PBXGroup;
 			children = (
+				D1A8540E1DD968C000607C0A /* Tools */,
+				D1A854071DD966B200607C0A /* FontSources */,
+				D1A854001DD9660200607C0A /* Macro */,
 			);
 			path = FGWorkBag;
 			sourceTree = "<group>";
@@ -179,6 +196,36 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D1A854001DD9660200607C0A /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				D1A854011DD9663000607C0A /* FGColorsAndFonts.h */,
+				D1A854041DD9668800607C0A /* FGObjectFunction.h */,
+				D1A8540B1DD9670700607C0A /* FGSizes.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		D1A854071DD966B200607C0A /* FontSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FontSources;
+			sourceTree = "<group>";
+		};
+		D1A8540E1DD968C000607C0A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D1A8540F1DD968C000607C0A /* FGFastInit.h */,
+				D1A854101DD968C000607C0A /* FGFastInit.m */,
+				D1A854111DD968C000607C0A /* FGSizeTool.h */,
+				D1A854121DD968C000607C0A /* FGSizeTool.m */,
+				D1A854131DD968C000607C0A /* FGHttpTool.h */,
+				D1A854141DD968C000607C0A /* FGHttpTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		D1B4018A1DCC58C800252F8D = {
@@ -514,7 +561,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1B4019E1DCC58C800252F8D /* ViewController.m in Sources */,
+				D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */,
 				D1B4019B1DCC58C800252F8D /* AppDelegate.m in Sources */,
+				D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */,
+				D1A854151DD968C000607C0A /* FGFastInit.m in Sources */,
 				D1B401981DCC58C800252F8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
