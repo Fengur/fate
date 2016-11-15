@@ -65,6 +65,10 @@
 		D1FAE1521DD9D27A00FADBC8 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FAE13C1DD9D27A00FADBC8 /* UIScrollView+MJExtension.m */; };
 		D1FAE1531DD9D27A00FADBC8 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FAE13E1DD9D27A00FADBC8 /* UIScrollView+MJRefresh.m */; };
 		D1FAE1541DD9D27A00FADBC8 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FAE1401DD9D27A00FADBC8 /* UIView+MJExtension.m */; };
+		D1FFBA581DDADCE800E63625 /* DSSentenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FFBA571DDADCE800E63625 /* DSSentenceModel.m */; };
+		D1FFBA661DDAF03400E63625 /* DSTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FFBA651DDAF03400E63625 /* DSTravelViewController.m */; };
+		D1FFBA691DDAF5FE00E63625 /* DSTravelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FFBA681DDAF5FE00E63625 /* DSTravelModel.m */; };
+		D1FFBA721DDAF65B00E63625 /* DSTravelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FFBA711DDAF65B00E63625 /* DSTravelCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +209,14 @@
 		D1FAE13E1DD9D27A00FADBC8 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		D1FAE13F1DD9D27A00FADBC8 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		D1FAE1401DD9D27A00FADBC8 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		D1FFBA561DDADCE800E63625 /* DSSentenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSentenceModel.h; sourceTree = "<group>"; };
+		D1FFBA571DDADCE800E63625 /* DSSentenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSentenceModel.m; sourceTree = "<group>"; };
+		D1FFBA641DDAF03400E63625 /* DSTravelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTravelViewController.h; sourceTree = "<group>"; };
+		D1FFBA651DDAF03400E63625 /* DSTravelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTravelViewController.m; sourceTree = "<group>"; };
+		D1FFBA671DDAF5FE00E63625 /* DSTravelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTravelModel.h; sourceTree = "<group>"; };
+		D1FFBA681DDAF5FE00E63625 /* DSTravelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTravelModel.m; sourceTree = "<group>"; };
+		D1FFBA701DDAF65B00E63625 /* DSTravelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTravelCell.h; sourceTree = "<group>"; };
+		D1FFBA711DDAF65B00E63625 /* DSTravelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTravelCell.m; sourceTree = "<group>"; };
 		E037D8F1F85D4F175AC416A1 /* Pods-destinyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E4FAE107223A0C906B2C4701 /* Pods-destinyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-destinyTests/Pods-destinyTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-destiny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +299,7 @@
 		D15B368C1DD960CC00A8A0C3 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				D1FFBA601DDAF01600E63625 /* Travel */,
 				D1A854761DD98E3F00607C0A /* Ad */,
 				D1A8547A1DD98E3F00607C0A /* Login */,
 				D1A8547E1DD98E3F00607C0A /* Mine */,
@@ -454,6 +467,8 @@
 		D1A854781DD98E3F00607C0A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D1FFBA561DDADCE800E63625 /* DSSentenceModel.h */,
+				D1FFBA571DDADCE800E63625 /* DSSentenceModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -775,6 +790,43 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		D1FFBA601DDAF01600E63625 /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				D1FFBA611DDAF01600E63625 /* Controllers */,
+				D1FFBA621DDAF01600E63625 /* Models */,
+				D1FFBA631DDAF01600E63625 /* Views */,
+			);
+			path = Travel;
+			sourceTree = "<group>";
+		};
+		D1FFBA611DDAF01600E63625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1FFBA641DDAF03400E63625 /* DSTravelViewController.h */,
+				D1FFBA651DDAF03400E63625 /* DSTravelViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D1FFBA621DDAF01600E63625 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1FFBA671DDAF5FE00E63625 /* DSTravelModel.h */,
+				D1FFBA681DDAF5FE00E63625 /* DSTravelModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1FFBA631DDAF01600E63625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1FFBA701DDAF65B00E63625 /* DSTravelCell.h */,
+				D1FFBA711DDAF65B00E63625 /* DSTravelCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1070,6 +1122,8 @@
 				D1A8544E1DD984E000607C0A /* FGHealthTool.m in Sources */,
 				D1A854911DD98E8F00607C0A /* DSWelcomeViewController.m in Sources */,
 				D1A8545B1DD9883F00607C0A /* UIButton+FGCountDown.m in Sources */,
+				D1FFBA581DDADCE800E63625 /* DSSentenceModel.m in Sources */,
+				D1FFBA661DDAF03400E63625 /* DSTravelViewController.m in Sources */,
 				D1A854BD1DD9923000607C0A /* CYLTabBar.m in Sources */,
 				D1FAE14A1DD9D27A00FADBC8 /* MJRefreshBackNormalFooter.m in Sources */,
 				D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */,
@@ -1078,6 +1132,7 @@
 				D1A854151DD968C000607C0A /* FGFastInit.m in Sources */,
 				D1A8543C1DD97F4500607C0A /* NSString+FG.m in Sources */,
 				D1FAE14C1DD9D27A00FADBC8 /* MJRefreshGifHeader.m in Sources */,
+				D1FFBA721DDAF65B00E63625 /* DSTravelCell.m in Sources */,
 				D1A854941DD98E9F00607C0A /* DSHomeViewController.m in Sources */,
 				D1FAE1471DD9D27A00FADBC8 /* MJRefreshAutoNormalFooter.m in Sources */,
 				D1FAE1491DD9D27A00FADBC8 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1087,6 +1142,7 @@
 				D1A854C01DD9923000607C0A /* FGTabBarController.m in Sources */,
 				D1A854421DD9825900607C0A /* UIView+FG.m in Sources */,
 				D1FAE14E1DD9D27A00FADBC8 /* MJRefreshStateHeader.m in Sources */,
+				D1FFBA691DDAF5FE00E63625 /* DSTravelModel.m in Sources */,
 				D1A854C11DD9923000607C0A /* FGSwipeViewControllers.m in Sources */,
 				D1FAE1501DD9D27A00FADBC8 /* MJRefreshConst.m in Sources */,
 				D1130AB31DD9A10900632D19 /* DSJokeCell.m in Sources */,
@@ -1228,6 +1284,7 @@
 			baseConfigurationReference = 629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 72474N4MWM;
 				INFOPLIST_FILE = destiny/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1242,6 +1299,7 @@
 			baseConfigurationReference = 3BCFC3BCA58A0C8C9DC18428 /* Pods-destiny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 72474N4MWM;
 				INFOPLIST_FILE = destiny/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

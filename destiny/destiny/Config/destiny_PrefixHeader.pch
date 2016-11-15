@@ -22,4 +22,7 @@
 #import "DSHttpPort.h"
 #import "FGHttpTool.h"
 #import "UIView+FG.h"
+#import "POP.h"
+#import "YYImage.h"
+#import "YYWebImage.h"
 #endif /* destiny_PrefixHeader_pch */

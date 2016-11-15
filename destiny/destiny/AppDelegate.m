@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FGTabBarController.h"
+#import "DSADViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +21,17 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [UIViewController new];
     [self.window makeKeyAndVisible];
-    _tabBarVC = [[FGTabBarController alloc]init];
-    _window.rootViewController = _tabBarVC.tabBarController;
+    _adVC = [[DSADViewController alloc]init];
+    _window.rootViewController = _adVC;
+
     return YES;
 }
 
+
+- (void)setAppRootVC{
+        _tabBarVC = [[FGTabBarController alloc]init];
+        _window.rootViewController = _tabBarVC.tabBarController;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 }

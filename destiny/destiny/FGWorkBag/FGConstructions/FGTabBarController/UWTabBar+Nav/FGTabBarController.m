@@ -13,6 +13,7 @@
 
 #import "DSHomeViewController.h"
 #import "DSMineViewController.h"
+#import "DSTravelViewController.h"
 
 @interface FGTabBarController ()
 
@@ -36,6 +37,9 @@
         DSMineViewController *mineVC = [[DSMineViewController alloc]init];
         FGNavigationController *secondNav = [[FGNavigationController alloc]initWithRootViewController:mineVC];
         
+        DSTravelViewController *travelVC = [[DSTravelViewController alloc]init];
+        FGNavigationController *thirdVC = [[FGNavigationController alloc]initWithRootViewController:travelVC];
+        
         CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
 
         /*
@@ -48,6 +52,7 @@
 
         [tabBarController setViewControllers:@[
                                                firstNav,
+                                               thirdVC,
                                                secondNav,
         ]];
         /**
@@ -71,19 +76,19 @@
     NSDictionary *dict1 = @{
         CYLTabBarItemImage : @"one_N",
         CYLTabBarItemSelectedImage : @"one_S",
-        CYLTabBarItemTitle : @"笑"
+        CYLTabBarItemTitle : @"笑之"
     };
 
     NSDictionary *dict2 = @{
         CYLTabBarItemImage : @"two_N",
         CYLTabBarItemSelectedImage : @"two_S",
-        CYLTabBarItemTitle : @"我"
+        CYLTabBarItemTitle : @"吾人"
     };
 
     NSDictionary *dict3 = @{
-        CYLTabBarItemImage : @"shopNormal",
-        CYLTabBarItemSelectedImage : @"shopSelect",
-        CYLTabBarItemTitle : @"积分兑换"
+        CYLTabBarItemImage : @"three_N",
+        CYLTabBarItemSelectedImage : @"three_S",
+        CYLTabBarItemTitle : @"无游"
     };
     NSDictionary *dict4 = @{
         CYLTabBarItemImage : @"mineNormal",
@@ -93,6 +98,7 @@
 
     NSArray *tabBarItemsAttributes = @[
         dict1,
+        dict3,
         dict2,
     ];
     tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;

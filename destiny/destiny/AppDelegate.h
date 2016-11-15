@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class FGTabBarController;
+@class DSADViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) FGTabBarController *tabBarVC;
+@property (strong, nonatomic) DSADViewController *adVC;
 
+
+- (void)setAppRootVC;
 @end
 

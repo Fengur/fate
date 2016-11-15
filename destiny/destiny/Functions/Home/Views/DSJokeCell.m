@@ -39,16 +39,17 @@
     jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"2、" withString:@""];
     jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"3、" withString:@""];
     jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"4、" withString:@""];
+    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"5、" withString:@""];
     
     _containLabel.numberOfLines = 0;
     _containLabel.text = jokeModel.text;
-    _containLabel.font = SingleFont(14.f);
+    _containLabel.font = SingleFont(16.f);
     _containLabel.frame = CGRectMake(Padding*GoldenScale, Spadding, _backView.width-Padding, 0);
     _containLabel.attributedText = [self setAttributeStringWithString:_containLabel.text];
     [_containLabel sizeToFit];
     _containLabel.backgroundColor = [UIColor whiteColor];
     _backView.height = _containLabel.height+Padding*GoldenScale*2;
-    _backView.layer.cornerRadius = Spadding;
+//    _backView.layer.cornerRadius = Spadding;
     _cellHeight = _backView.height+Padding;
 }
 
@@ -57,7 +58,7 @@
 }
 
 - (void)setupControls{
-    _backView = [[UIView alloc]initWithFrame:CGRectMake(Padding, Spadding, ScreenWidth-Padding*2, 0)];
+    _backView = [[UIView alloc]initWithFrame:CGRectMake(0, Spadding, ScreenWidth, 0)];
     [self addSubview:_backView];
     _backView.backgroundColor = [UIColor whiteColor];
     _containLabel = [[UILabel alloc]init];
@@ -66,13 +67,28 @@
 
 
 
-
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+    [super setHighlighted:highlighted animated:animated];
+    if (self.highlighted) {
+        POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+        scaleAnimation.duration = 0.5;
+        scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(0.9, 0.9)];
+        [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+    } else {
+        POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+        scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 1)];
+        scaleAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(1, 1)];
+        scaleAnimation.springBounciness = 5.f;
+        [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+    }
+}
 
 - (NSMutableAttributedString *)setAttributeStringWithString:(NSString *)string {
     NSMutableAttributedString *hintString =
     [[NSMutableAttributedString alloc] initWithString:string];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle setLineSpacing:4];
+    [paragraphStyle setLineSpacing:6];
     [hintString addAttribute:NSParagraphStyleAttributeName
                        value:paragraphStyle
                        range:NSMakeRange(0, [string length])];

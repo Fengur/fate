@@ -1,42 +1,34 @@
 //
-//  DSHomeViewController.m
+//  DSTravelViewController.m
 //  destiny
 //
-//  Created by Fengur on 2016/11/14.
+//  Created by Fengur on 2016/11/15.
 //  Copyright © 2016年 code.sogou.fengur. All rights reserved.
 //
 
-#import "DSHomeViewController.h"
-#import "DSJokeCell.h"
-#import "DSJokeModel.h"
+#import "DSTravelViewController.h"
+#import "DSTravelModel.h"
 #import "UITableView+FG.h"
-#import "MJRefresh.h"
+#import "DSTravelCell.h"
 
-#define JokeRes_Body @"showapi_res_body"
-@interface DSHomeViewController ()<UITableViewDelegate,UITableViewDataSource>{
-    NSMutableArray *_jokeArray;
+@interface DSTravelViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    NSMutableArray *_travelArray;
     CGFloat historyY;
-    UIView *_backView;
 }
 @end
 
-@implementation DSHomeViewController
+@implementation DSTravelViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"笑之";
-    [self setupTabLeView];
-    _backView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    _backView.backgroundColor = [UIColor blackColor];
-    [[UIApplication sharedApplication].keyWindow addSubview:_backView];
-    _jokeArray = [NSMutableArray new];
-    [self requestJokeWithPage:@"1"];
+    self.title = @"无游";
+    self.view.backgroundColor = [UIColor blackColor];
+    _travelArray = [NSMutableArray new];
+        [self setupTabLeView];
+    [self requestTravelListWithPageNumber:@"1"];
+
     
-    [UIView animateWithDuration:1.5 animations:^{
-        _backView.alpha = 0;
-    } completion:^(BOOL finished) {
-        [_backView removeFromSuperview];
-    }];
 }
 
 - (void)setupTabLeView{
@@ -95,54 +87,57 @@
 }
 
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DSJokeCell *cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
+    DSTravelCell *cell = [[DSTravelCell alloc] initWithStyle:UITableViewCellStyleDefault
                                          reuseIdentifier:@"cellID"];
-    if(_jokeArray.count>0){
-        [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
+    if(_travelArray.count>0){
+       [cell setTravelCellDetailWithModel:(DSTravelModel *)_travelArray[indexPath.row]];
     }
     return [cell getCellHeight];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _jokeArray.count;
+    return _travelArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DSJokeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    DSTravelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
     if (cell == nil) {
-        cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell = [[DSTravelCell alloc] initWithStyle:UITableViewCellStyleDefault
                                  reuseIdentifier:@"cellID"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
+     
     }
-    if(_jokeArray.count>0){
-        [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
+    if(_travelArray.count>0){
+        [cell setTravelCellDetailWithModel:(DSTravelModel *)_travelArray[indexPath.row]];
     }
     return cell;
 }
 
-- (void)requestJokeWithPage:(NSString *)pageNumber{
-    [FGHttpTool updateBaseUrl:JokeUrl];
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    [dict setObject:pageNumber forKey:@"page"];
-    [FGHttpTool getWithURL:@"" params:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSMutableArray *resultArray = [[responseObject objectForKey:JokeRes_Body]objectForKey:@"contentlist"];
-        [_jokeArray removeAllObjects];
-        
-        for(int i =0;i<resultArray.count;i++){
-            DSJokeModel *model = [DSJokeModel new];
-            model = [DSJokeModel yy_modelWithDictionary:resultArray[i]];
-            [_jokeArray addObject:model];
-        }
-        [_containTableView reloadData];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    }];
-}
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
+- (void)requestTravelListWithPageNumber:(NSString *)page{
+    [FGHttpTool updateBaseUrl:TravelUrl];
+    NSMutableDictionary *paramDict = [[NSMutableDictionary alloc]init];
+    [paramDict setObject:page forKey:@"page"];
+    [FGHttpTool getWithURL:@"" params: paramDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [_travelArray removeAllObjects];
+        id response = [responseObject objectForKey:@"data"];
+        NSMutableArray *responseArray = [response objectForKey:@"books"];
+        if(responseArray.count>0){
+            for(int i = 0;i<responseArray.count;i++){
+                DSTravelModel *model = [DSTravelModel new];
+                model = [DSTravelModel yy_modelWithDictionary:responseArray[i]];
+                [_travelArray addObject:model];
+            }
+        }
+        [_containTableView reloadData];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
 @end

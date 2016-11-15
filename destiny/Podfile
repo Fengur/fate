@@ -6,6 +6,7 @@ target 'destiny' do
    pod 'Wonderful', '~> 1.2.0'
    pod 'pop', '~> 1.0.9'
    pod 'YYModel', '~> 1.0.4'
+   pod 'YYWebImage', '~> 1.0.5'
   target 'destinyTests' do
     inherit! :search_paths
     # Pods for testing

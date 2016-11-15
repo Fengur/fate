@@ -82,7 +82,7 @@ static NSString *netErrorImageName = @"";
     //  请求头设置
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [manager.requestSerializer setValue:JokeKey forHTTPHeaderField:JokeParmKey];
+    [manager.requestSerializer setValue:BaiduKey forHTTPHeaderField:BaiduKeyName];
     for (NSString *key in fg_httpHeaders.allKeys) {
         if (fg_httpHeaders[key]) {
             [manager.requestSerializer setValue:fg_httpHeaders[key] forHTTPHeaderField:key];
