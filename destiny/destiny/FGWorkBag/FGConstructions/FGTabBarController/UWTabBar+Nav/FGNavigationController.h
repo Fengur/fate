@@ -15,6 +15,6 @@ extern CGRect const kBackButtonRect;
 /** 标题字体大小 */
 extern CGFloat const kTitleFont;
 
-@interface UWNavigationController : UINavigationController
+@interface FGNavigationController : UINavigationController
 
 @end

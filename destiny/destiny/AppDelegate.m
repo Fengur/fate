@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FGTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [UIViewController new];
+    [self.window makeKeyAndVisible];
+    _tabBarVC = [[FGTabBarController alloc]init];
+    _window.rootViewController = _tabBarVC.tabBarController;
     return YES;
 }
 

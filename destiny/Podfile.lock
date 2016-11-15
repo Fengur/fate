@@ -15,20 +15,18 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Wonderful (1.2.0)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - Wonderful (~> 1.2.0)
-  - YYKit (~> 1.0.9)
+  - YYModel (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Wonderful: 8f8737eb8d2c32264110e91659095cb5c8bff223
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ad6983d6f7ac739c17a7edd84f2fe1613c20b3e6
+PODFILE CHECKSUM: c01c099296e47417aea28ed732388086a6454694
 
 COCOAPODS: 1.0.1

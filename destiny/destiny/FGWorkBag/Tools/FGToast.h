@@ -46,7 +46,7 @@ typedef NS_ENUM(NSInteger, FGToastPositionType) {
  *  弹出toast提示框
  *
  *  @param tips 提示信息
- *  @param delay 显示时长
+ *  @param time 显示时长
  */
 + (void)showTips:(NSString *)tips delay:(NSTimeInterval)time;
 

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DSColorAndFonts : NSObject
+// 夜间模式和日间模式开关 0表示日间
+#define DAY_OR_NIGHT 0
 
-@end
+#define Padding 10
+#define Spadding 5

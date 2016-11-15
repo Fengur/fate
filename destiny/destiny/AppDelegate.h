@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class FGTabBarController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) FGTabBarController *tabBarVC;
 
 @end
 

@@ -9,7 +9,7 @@
 #import "CYLTabBarController.h"
 @class CYLTabBarController;
 
-@interface UWTabBarController : NSObject
+@interface FGTabBarController : NSObject
 
 @property (nonatomic, readonly, strong) CYLTabBarController *tabBarController;
 

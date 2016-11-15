@@ -10,13 +10,17 @@
 #import "FGNavigationController.h"
 #import "FGTabBarController.h"
 #import <objc/runtime.h>
-@interface UWTabBarController ()
+
+#import "DSHomeViewController.h"
+#import "DSMineViewController.h"
+
+@interface FGTabBarController ()
 
 @property (nonatomic, readwrite, strong) CYLTabBarController *tabBarController;
 
 @end
 
-@implementation UWTabBarController
+@implementation FGTabBarController
 
 /**
  *  lazy load tabBarController
@@ -24,6 +28,14 @@
  *  @return CYLTabBarController
  */
 - (CYLTabBarController *)tabBarController {
+    if (_tabBarController == nil) {
+
+        DSHomeViewController *homeVC = [[DSHomeViewController alloc]init];
+        FGNavigationController *firstNav = [[FGNavigationController alloc]initWithRootViewController:homeVC];
+        
+        DSMineViewController *mineVC = [[DSMineViewController alloc]init];
+        FGNavigationController *secondNav = [[FGNavigationController alloc]initWithRootViewController:mineVC];
+        
         CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
 
         /*
@@ -35,6 +47,8 @@
         [self setUpTabBarItemsAttributesForController:tabBarController];
 
         [tabBarController setViewControllers:@[
+                                               firstNav,
+                                               secondNav,
         ]];
         /**
          *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar
@@ -43,7 +57,7 @@
         [[self class] customizeTabBarAppearance];
         [tabBarController setSelectedIndex:0];
         _tabBarController = tabBarController;
-
+    }
     return _tabBarController;
 }
 
@@ -55,15 +69,15 @@
  */
 - (void)setUpTabBarItemsAttributesForController:(CYLTabBarController *)tabBarController {
     NSDictionary *dict1 = @{
-        CYLTabBarItemImage : @"homeNormal",
-        CYLTabBarItemSelectedImage : @"homeSelect",
-        CYLTabBarItemTitle : @"运动"
+        CYLTabBarItemImage : @"one_N",
+        CYLTabBarItemSelectedImage : @"one_S",
+        CYLTabBarItemTitle : @"笑"
     };
 
     NSDictionary *dict2 = @{
-        CYLTabBarItemImage : @"rankNormal",
-        CYLTabBarItemSelectedImage : @"rankSelect",
-        CYLTabBarItemTitle : @"排名"
+        CYLTabBarItemImage : @"two_N",
+        CYLTabBarItemSelectedImage : @"two_S",
+        CYLTabBarItemTitle : @"我"
     };
 
     NSDictionary *dict3 = @{
@@ -80,8 +94,6 @@
     NSArray *tabBarItemsAttributes = @[
         dict1,
         dict2,
-        dict3,
-        dict4,
     ];
     tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
 }
@@ -97,30 +109,32 @@
     // 普通状态下的文字属性
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
     normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    normalAttrs[NSFontAttributeName] = DailyFont(13);
 
     // set the text color for selected state
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    selectedAttrs[NSFontAttributeName] = DailyFont(13);
 
     // set the text Attributes
     // 设置文字属性
     UITabBarItem *tabBar = [UITabBarItem appearance];
     [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateHighlighted];
+    [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 
     // Set the dark color to selected tab (the dimmed background)
     // TabBarItem选中后的背景颜色
 
-    /*
-    [[UITabBar appearance] setSelectionIndicatorImage:[self imageFromColor:[UIColor
-    colorWithRed:26/255.0 green:163/255.0 blue:133/255.0 alpha:1] forSize:CGSizeMake([UIScreen
-    mainScreen].bounds.size.width/5.0f, 49) withCornerRadius:0]];
-    */
+    
+//    [[UITabBar appearance] setSelectionIndicatorImage:[self imageFromColor:[UIColor
+//    colorWithRed:26/255.0 green:163/255.0 blue:133/255.0 alpha:1] forSize:CGSizeMake([UIScreen
+//    mainScreen].bounds.size.width/5.0f, 49) withCornerRadius:0]];
+    
     // set the bar background color
     // 设置背景图片
-    // UITabBar *tabBarAppearance = [UITabBar appearance];
-    // [tabBarAppearance setBackgroundImage:[UIImage imageNamed:@"tabbar_background_ios7"]];
+     UITabBar *tabBarAppearance = [UITabBar appearance];
+     [tabBarAppearance setBackgroundImage:[self imageFromColor:[UIColor blackColor] forSize:CGSizeMake(ScreenWidth, 49) withCornerRadius:0]];
 }
 
 + (UIImage *)imageFromColor:(UIColor *)color forSize:(CGSize)size withCornerRadius:(CGFloat)radius {

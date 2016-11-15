@@ -1,5 +1,5 @@
 //
-//  UWNavigationController.m
+//  FGNavigationController.m
 //  CYLTabBarController
 //
 //  Created by SheldonLee on 15/11/30.
@@ -19,10 +19,10 @@ CGFloat const kTitleFont = 18;
 
 static NSString *const navBarImageName = @"navigationbar7";
 
-@implementation UWNavigationController
+@implementation FGNavigationController
 
 + (void)initialize {
-    if (self == [UWNavigationController class]) {
+    if (self == [FGNavigationController class]) {
         [self setUpNavigationBarAppearance];
     }
 }
@@ -41,7 +41,7 @@ static NSString *const navBarImageName = @"navigationbar7";
         backgroundImage = [UIImage imageNamed:navBarImageName];
 
         textAttributes = @{
-            NSFontAttributeName : [UIFont boldSystemFontOfSize:kTitleFont],
+            NSFontAttributeName : DailyFont(kTitleFont),
             NSForegroundColorAttributeName : kTitleColor,
         };
     } else {
@@ -57,7 +57,7 @@ static NSString *const navBarImageName = @"navigationbar7";
 #endif
     }
 
-    [navigationBar setBarTintColor:[UIColor whiteColor]];
+    [navigationBar setBarTintColor:[UIColor blackColor]];
     //  translucent = NO -> 控制器计算尺寸时，不需要+64像素
     navigationBar.translucent = NO;
 
@@ -90,7 +90,7 @@ static NSString *const navBarImageName = @"navigationbar7";
  */
 - (UIStatusBarStyle)preferredStatusBarStyle {
 
-    return UIStatusBarStyleDefault;
+    return UIStatusBarStyleLightContent;
 }
 
 @end
