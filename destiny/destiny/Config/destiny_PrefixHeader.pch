@@ -25,4 +25,5 @@
 #import "POP.h"
 #import "YYImage.h"
 #import "YYWebImage.h"
+#import "MJRefresh.h"
 #endif /* destiny_PrefixHeader_pch */

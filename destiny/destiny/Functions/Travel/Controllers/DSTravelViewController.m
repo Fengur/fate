@@ -15,6 +15,7 @@
 {
     NSMutableArray *_travelArray;
     CGFloat historyY;
+    NSInteger _currentPage;
 }
 @end
 
@@ -25,7 +26,8 @@
     self.title = @"无游";
     self.view.backgroundColor = [UIColor blackColor];
     _travelArray = [NSMutableArray new];
-        [self setupTabLeView];
+    
+    [self setupTabLeView];
     [self requestTravelListWithPageNumber:@"1"];
 
     
@@ -40,8 +42,30 @@
     [_containTableView hideBottomEmptyCells];
     [self.view addSubview:_containTableView];
     
+    [self setReresh];
+    
 }
 
+- (void)setReresh {
+    _containTableView.mj_header =
+    [MJRefreshNormalHeader headerWithRefreshingTarget:self
+                                     refreshingAction:@selector(headerReresh)];
+    
+    _containTableView.mj_footer =
+    [MJRefreshBackNormalFooter footerWithRefreshingTarget:self
+                                         refreshingAction:@selector(footerLoading)];
+}
+
+- (void)headerReresh{
+    _currentPage = 1;
+    [_travelArray removeAllObjects];
+    [self requestTravelListWithPageNumber:@"1"];
+}
+
+- (void)footerLoading{
+    _currentPage ++;
+    [self requestTravelListWithPageNumber:[NSString stringWithFormat:@"%ld",_currentPage]];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -124,7 +148,6 @@
     NSMutableDictionary *paramDict = [[NSMutableDictionary alloc]init];
     [paramDict setObject:page forKey:@"page"];
     [FGHttpTool getWithURL:@"" params: paramDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        [_travelArray removeAllObjects];
         id response = [responseObject objectForKey:@"data"];
         NSMutableArray *responseArray = [response objectForKey:@"books"];
         if(responseArray.count>0){
@@ -135,8 +158,11 @@
             }
         }
         [_containTableView reloadData];
+        [_containTableView.mj_header endRefreshing];
+        [_containTableView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        [_containTableView.mj_header endRefreshing];
+        [_containTableView.mj_footer endRefreshing];
     }];
 }
 

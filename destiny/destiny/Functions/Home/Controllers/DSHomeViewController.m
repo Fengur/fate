@@ -17,6 +17,7 @@
     NSMutableArray *_jokeArray;
     CGFloat historyY;
     UIView *_backView;
+    NSInteger _currentPage;
 }
 @end
 
@@ -30,6 +31,7 @@
     _backView.backgroundColor = [UIColor blackColor];
     [[UIApplication sharedApplication].keyWindow addSubview:_backView];
     _jokeArray = [NSMutableArray new];
+    _currentPage = 1;
     [self requestJokeWithPage:@"1"];
     
     [UIView animateWithDuration:1.5 animations:^{
@@ -47,7 +49,7 @@
     _containTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_containTableView hideBottomEmptyCells];
     [self.view addSubview:_containTableView];
-    
+    [self setReresh];
 }
 
 
@@ -123,13 +125,35 @@
     return cell;
 }
 
+- (void)setReresh {
+    _containTableView.mj_header =
+    [MJRefreshNormalHeader headerWithRefreshingTarget:self
+                                     refreshingAction:@selector(headerReresh)];
+    
+    _containTableView.mj_footer =
+    [MJRefreshBackNormalFooter footerWithRefreshingTarget:self
+                                         refreshingAction:@selector(footerLoading)];
+}
+
+- (void)headerReresh{
+    _currentPage = 1;
+    [_jokeArray removeAllObjects];
+    [self requestJokeWithPage:@"1"];
+}
+
+- (void)footerLoading{
+    _currentPage ++;
+    [self requestJokeWithPage:[NSString stringWithFormat:@"%ld",_currentPage]];
+}
+
+
 - (void)requestJokeWithPage:(NSString *)pageNumber{
     [FGHttpTool updateBaseUrl:JokeUrl];
     NSMutableDictionary *dict = [NSMutableDictionary new];
     [dict setObject:pageNumber forKey:@"page"];
     [FGHttpTool getWithURL:@"" params:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableArray *resultArray = [[responseObject objectForKey:JokeRes_Body]objectForKey:@"contentlist"];
-        [_jokeArray removeAllObjects];
+        
         
         for(int i =0;i<resultArray.count;i++){
             DSJokeModel *model = [DSJokeModel new];
@@ -137,7 +161,11 @@
             [_jokeArray addObject:model];
         }
         [_containTableView reloadData];
+        [_containTableView.mj_header endRefreshing];
+        [_containTableView.mj_footer endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [_containTableView.mj_header endRefreshing];
+        [_containTableView.mj_footer endRefreshing];
     }];
 }
 
