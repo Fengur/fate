@@ -25,7 +25,7 @@
     [super viewDidLoad];
     self.title = @"笑之";
     [self setupTabLeView];
-
+    
     _jokeArray = [NSMutableArray new];
     [self requestJokeWithPage:@"1"];
 }
@@ -46,101 +46,50 @@
     
 }
 
-//设置滑动的判定范围
-
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
-
-{
-    
-    if (historyY+20<targetContentOffset->y)
-        
-    {
-        
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
+                     withVelocity:(CGPoint)velocity
+              targetContentOffset:(inout CGPoint *)targetContentOffset{
+    if (historyY + 20<targetContentOffset->y){
         [self setTabBarHidden:YES];
-        
-    }
-    
-    else if(historyY-20>targetContentOffset->y)
-        
-    {
-        
-        
-        
+    }else if(historyY-20>targetContentOffset->y){
         [self setTabBarHidden:NO];
-        
     }
-    
-    historyY=targetContentOffset->y;
-    
+    historyY = targetContentOffset->y;
 }
 
-//隐藏显示tabbar
-
-- (void)setTabBarHidden:(BOOL)hidden
-
-{
-    
+- (void)setTabBarHidden:(BOOL)hidden{
     UIView *tab = self.tabBarController.view;
-    
     CGRect  tabRect=self.tabBarController.tabBar.frame;
-    
     if ([tab.subviews count] < 2) {
-        
         return;
-        
     }
-    
-    
     
     UIView *view;
-    
     if ([[tab.subviews objectAtIndex:0] isKindOfClass:[UITabBar class]]) {
-        
         view = [tab.subviews objectAtIndex:1];
-        
     } else {
-        
         view = [tab.subviews objectAtIndex:0];
-        
     }
     
-    
-    
-    if (hidden) {
-        
+    if (hidden){
         view.frame = tab.bounds;
-        
-        tabRect.origin.y=[[UIScreen mainScreen] bounds].size.height+self.tabBarController.tabBar.frame.size.height;
-        
-    } else {
-        
+        tabRect.origin.y = [[UIScreen mainScreen] bounds].size.height+self.tabBarController.tabBar.frame.size.height;
+    }else{
         view.frame = CGRectMake(tab.bounds.origin.x, tab.bounds.origin.y, tab.bounds.size.width, tab.bounds.size.height);
-        
         tabRect.origin.y=[[UIScreen mainScreen] bounds].size.height-self.tabBarController.tabBar.frame.size.height;
-        
     }
-    
-    
     
     [UIView animateWithDuration:0.5f animations:^{
-        
         self.tabBarController.tabBar.frame=tabRect;
-        
     }completion:^(BOOL finished) {
-        
-        
-        
     }];
-    
-    
-    
 }
 
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-   DSJokeCell *cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
-                             reuseIdentifier:@"cellID"];
+    DSJokeCell *cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                         reuseIdentifier:@"cellID"];
     if(_jokeArray.count>0){
         [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
     }
@@ -152,13 +101,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-        DSJokeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
-        if (cell == nil) {
-            cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                          reuseIdentifier:@"cellID"];
-            cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
-        }
+    DSJokeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    if (cell == nil) {
+        cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                 reuseIdentifier:@"cellID"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }
     if(_jokeArray.count>0){
         [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
     }
@@ -178,13 +127,9 @@
             model = [DSJokeModel yy_modelWithDictionary:resultArray[i]];
             [_jokeArray addObject:model];
         }
-
-    [_containTableView reloadData];
+        [_containTableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
     }];
-    
-
 }
 
 

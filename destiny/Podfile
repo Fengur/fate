@@ -4,6 +4,7 @@
 target 'destiny' do
    pod 'AFNetworking', '~> 3.1.0'
    pod 'Wonderful', '~> 1.2.0'
+   pod 'pop', '~> 1.0.9'
    pod 'YYModel', '~> 1.0.4'
   target 'destinyTests' do
     inherit! :search_paths
