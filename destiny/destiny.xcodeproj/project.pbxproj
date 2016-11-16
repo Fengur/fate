@@ -28,6 +28,9 @@
 		D12ED13B1DDC0BA40072D1DE /* WXSTransitionManager+ViewMoveAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1281DDC0BA40072D1DE /* WXSTransitionManager+ViewMoveAnimation.m */; };
 		D12ED13C1DDC0BA40072D1DE /* WXSTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED12A1DDC0BA40072D1DE /* WXSTransitionManager.m */; };
 		D12ED13D1DDC0BA40072D1DE /* WXSTransitionProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED12C1DDC0BA40072D1DE /* WXSTransitionProperty.m */; };
+		D12ED1401DDC2EA20072D1DE /* DSTravelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED13F1DDC2EA20072D1DE /* DSTravelDetailViewController.m */; };
+		D12ED1461DDC30E10072D1DE /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1431DDC30E10072D1DE /* NJKWebViewProgress.m */; };
+		D12ED1471DDC30E10072D1DE /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1451DDC30E10072D1DE /* NJKWebViewProgressView.m */; };
 		D1A854151DD968C000607C0A /* FGFastInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854101DD968C000607C0A /* FGFastInit.m */; };
 		D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854121DD968C000607C0A /* FGSizeTool.m */; };
 		D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854141DD968C000607C0A /* FGHttpTool.m */; };
@@ -149,6 +152,12 @@
 		D12ED12B1DDC0BA40072D1DE /* WXSTransitionProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTransitionProperty.h; sourceTree = "<group>"; };
 		D12ED12C1DDC0BA40072D1DE /* WXSTransitionProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSTransitionProperty.m; sourceTree = "<group>"; };
 		D12ED12D1DDC0BA40072D1DE /* WXSTypedefConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTypedefConfig.h; sourceTree = "<group>"; };
+		D12ED13E1DDC2EA20072D1DE /* DSTravelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTravelDetailViewController.h; sourceTree = "<group>"; };
+		D12ED13F1DDC2EA20072D1DE /* DSTravelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTravelDetailViewController.m; sourceTree = "<group>"; };
+		D12ED1421DDC30E10072D1DE /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		D12ED1431DDC30E10072D1DE /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		D12ED1441DDC30E10072D1DE /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		D12ED1451DDC30E10072D1DE /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destiny_PrefixHeader.pch; sourceTree = "<group>"; };
 		D1A854011DD9663000607C0A /* FGColorsAndFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGColorsAndFonts.h; sourceTree = "<group>"; };
 		D1A854041DD9668800607C0A /* FGObjectFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGObjectFunction.h; sourceTree = "<group>"; };
@@ -362,6 +371,17 @@
 			path = WXSTransition;
 			sourceTree = "<group>";
 		};
+		D12ED1411DDC30E10072D1DE /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				D12ED1421DDC30E10072D1DE /* NJKWebViewProgress.h */,
+				D12ED1431DDC30E10072D1DE /* NJKWebViewProgress.m */,
+				D12ED1441DDC30E10072D1DE /* NJKWebViewProgressView.h */,
+				D12ED1451DDC30E10072D1DE /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
 		D15B368A1DD960CC00A8A0C3 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +421,7 @@
 		D15B368D1DD9622500A8A0C3 /* ThirdParts */ = {
 			isa = PBXGroup;
 			children = (
+				D12ED1411DDC30E10072D1DE /* NJKWebViewProgress */,
 				D12ED10C1DDC0BA40072D1DE /* WXSTransition */,
 				D1FAE1121DD9D27A00FADBC8 /* MJRefresh */,
 			);
@@ -895,6 +916,8 @@
 			children = (
 				D1FFBA641DDAF03400E63625 /* DSTravelViewController.h */,
 				D1FFBA651DDAF03400E63625 /* DSTravelViewController.m */,
+				D12ED13E1DDC2EA20072D1DE /* DSTravelDetailViewController.h */,
+				D12ED13F1DDC2EA20072D1DE /* DSTravelDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1212,6 +1235,7 @@
 				D1FAE1451DD9D27A00FADBC8 /* MJRefreshHeader.m in Sources */,
 				D12ED13D1DDC0BA40072D1DE /* WXSTransitionProperty.m in Sources */,
 				D1A854BE1DD9923000607C0A /* CYLTabBarController.m in Sources */,
+				D12ED1461DDC30E10072D1DE /* NJKWebViewProgress.m in Sources */,
 				D12ED1371DDC0BA40072D1DE /* WXSTransitionManager+PageAnimation.m in Sources */,
 				D1FAE1511DD9D27A00FADBC8 /* NSBundle+MJRefresh.m in Sources */,
 				D12ED1311DDC0BA40072D1DE /* WXSPercentDrivenInteractiveTransition.m in Sources */,
@@ -1235,7 +1259,9 @@
 				D1A854151DD968C000607C0A /* FGFastInit.m in Sources */,
 				D1A8543C1DD97F4500607C0A /* NSString+FG.m in Sources */,
 				D12ED1381DDC0BA40072D1DE /* WXSTransitionManager+SpreadAnimation.m in Sources */,
+				D12ED1401DDC2EA20072D1DE /* DSTravelDetailViewController.m in Sources */,
 				D1FAE14C1DD9D27A00FADBC8 /* MJRefreshGifHeader.m in Sources */,
+				D12ED1471DDC30E10072D1DE /* NJKWebViewProgressView.m in Sources */,
 				D1FFBA721DDAF65B00E63625 /* DSTravelCell.m in Sources */,
 				D1A854941DD98E9F00607C0A /* DSHomeViewController.m in Sources */,
 				D1FAE1471DD9D27A00FADBC8 /* MJRefreshAutoNormalFooter.m in Sources */,

@@ -49,7 +49,6 @@
     [_containLabel sizeToFit];
     _containLabel.backgroundColor = [UIColor whiteColor];
     _backView.height = _containLabel.height+Padding*GoldenScale*2;
-//    _backView.layer.cornerRadius = Spadding;
     _cellHeight = _backView.height+Padding;
 }
 

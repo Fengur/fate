@@ -24,6 +24,7 @@
 #import "UIView+FG.h"
 #import "POP.h"
 #import "YYImage.h"
+#import "UINavigationController+WXSTransition.h"
 #import "YYWebImage.h"
 #import "MJRefresh.h"
 #endif /* destiny_PrefixHeader_pch */

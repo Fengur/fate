@@ -10,6 +10,7 @@
 #import "DSTravelModel.h"
 #import "UITableView+FG.h"
 #import "DSTravelCell.h"
+#import "DSTravelDetailViewController.h"
 
 @interface DSTravelViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -68,7 +69,17 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    DSTravelDetailViewController *detailVC = [[DSTravelDetailViewController alloc]init];
+    if(_travelArray.count>0){
+        detailVC.loadUrl = ((DSTravelModel *)_travelArray[indexPath.row]).bookUrl;
+        detailVC.titleStr = ((DSTravelModel *)_travelArray[indexPath.row]).title;
+    }
+    [self.navigationController wxs_pushViewController:detailVC makeTransition:^(WXSTransitionProperty *transition) {
+        transition.transitionType = WXSTransitionTypePush;
+        transition.animationTime = GoldenScale;
+        transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
+        transition.backGestureEnable = YES;
+    }];
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
