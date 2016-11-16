@@ -1,0 +1,8 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Wonderful" "${PODS_ROOT}/Headers/Public/YYCache" "${PODS_ROOT}/Headers/Public/YYImage" "${PODS_ROOT}/Headers/Public/YYModel" "${PODS_ROOT}/Headers/Public/YYWebImage" "${PODS_ROOT}/Headers/Public/pop"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/Wonderful" "$PODS_CONFIGURATION_BUILD_DIR/YYCache" "$PODS_CONFIGURATION_BUILD_DIR/YYImage" "$PODS_CONFIGURATION_BUILD_DIR/YYModel" "$PODS_CONFIGURATION_BUILD_DIR/YYWebImage" "$PODS_CONFIGURATION_BUILD_DIR/pop"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Wonderful" -isystem "${PODS_ROOT}/Headers/Public/YYCache" -isystem "${PODS_ROOT}/Headers/Public/YYImage" -isystem "${PODS_ROOT}/Headers/Public/YYModel" -isystem "${PODS_ROOT}/Headers/Public/YYWebImage" -isystem "${PODS_ROOT}/Headers/Public/pop"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Wonderful" -l"YYCache" -l"YYImage" -l"YYModel" -l"YYWebImage" -l"c++" -l"pop" -l"sqlite3" -l"z" -framework "Accelerate" -framework "AssetsLibrary" -framework "CoreFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

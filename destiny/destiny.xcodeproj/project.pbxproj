@@ -31,6 +31,8 @@
 		D12ED1401DDC2EA20072D1DE /* DSTravelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED13F1DDC2EA20072D1DE /* DSTravelDetailViewController.m */; };
 		D12ED1461DDC30E10072D1DE /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1431DDC30E10072D1DE /* NJKWebViewProgress.m */; };
 		D12ED1471DDC30E10072D1DE /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1451DDC30E10072D1DE /* NJKWebViewProgressView.m */; };
+		D12ED14F1DDC42C60072D1DE /* DSCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED14E1DDC42C60072D1DE /* DSCardsViewController.m */; };
+		D12ED1521DDC42F40072D1DE /* DSCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1511DDC42F40072D1DE /* DSCardCell.m */; };
 		D1A854151DD968C000607C0A /* FGFastInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854101DD968C000607C0A /* FGFastInit.m */; };
 		D1A854161DD968C000607C0A /* FGSizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854121DD968C000607C0A /* FGSizeTool.m */; };
 		D1A854171DD968C000607C0A /* FGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1A854141DD968C000607C0A /* FGHttpTool.m */; };
@@ -158,6 +160,10 @@
 		D12ED1431DDC30E10072D1DE /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
 		D12ED1441DDC30E10072D1DE /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
 		D12ED1451DDC30E10072D1DE /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		D12ED14D1DDC42C60072D1DE /* DSCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCardsViewController.h; sourceTree = "<group>"; };
+		D12ED14E1DDC42C60072D1DE /* DSCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCardsViewController.m; sourceTree = "<group>"; };
+		D12ED1501DDC42F40072D1DE /* DSCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCardCell.h; sourceTree = "<group>"; };
+		D12ED1511DDC42F40072D1DE /* DSCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCardCell.m; sourceTree = "<group>"; };
 		D15B36931DD9632C00A8A0C3 /* destiny_PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destiny_PrefixHeader.pch; sourceTree = "<group>"; };
 		D1A854011DD9663000607C0A /* FGColorsAndFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGColorsAndFonts.h; sourceTree = "<group>"; };
 		D1A854041DD9668800607C0A /* FGObjectFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGObjectFunction.h; sourceTree = "<group>"; };
@@ -382,6 +388,41 @@
 			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
+		D12ED1491DDC42AE0072D1DE /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				D12ED14A1DDC42AE0072D1DE /* Models */,
+				D12ED14B1DDC42AE0072D1DE /* ViewControllers */,
+				D12ED14C1DDC42AE0072D1DE /* Views */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		D12ED14A1DDC42AE0072D1DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D12ED14B1DDC42AE0072D1DE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D12ED14D1DDC42C60072D1DE /* DSCardsViewController.h */,
+				D12ED14E1DDC42C60072D1DE /* DSCardsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D12ED14C1DDC42AE0072D1DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D12ED1501DDC42F40072D1DE /* DSCardCell.h */,
+				D12ED1511DDC42F40072D1DE /* DSCardCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D15B368A1DD960CC00A8A0C3 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +449,7 @@
 		D15B368C1DD960CC00A8A0C3 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				D12ED1491DDC42AE0072D1DE /* Card */,
 				D1FFBA601DDAF01600E63625 /* Travel */,
 				D1A854761DD98E3F00607C0A /* Ad */,
 				D1A8547A1DD98E3F00607C0A /* Login */,
@@ -1235,6 +1277,7 @@
 				D1FAE1451DD9D27A00FADBC8 /* MJRefreshHeader.m in Sources */,
 				D12ED13D1DDC0BA40072D1DE /* WXSTransitionProperty.m in Sources */,
 				D1A854BE1DD9923000607C0A /* CYLTabBarController.m in Sources */,
+				D12ED14F1DDC42C60072D1DE /* DSCardsViewController.m in Sources */,
 				D12ED1461DDC30E10072D1DE /* NJKWebViewProgress.m in Sources */,
 				D12ED1371DDC0BA40072D1DE /* WXSTransitionManager+PageAnimation.m in Sources */,
 				D1FAE1511DD9D27A00FADBC8 /* NSBundle+MJRefresh.m in Sources */,
@@ -1257,6 +1300,7 @@
 				D1FAE1421DD9D27A00FADBC8 /* MJRefreshBackFooter.m in Sources */,
 				D1A854BF1DD9923000607C0A /* FGNavigationController.m in Sources */,
 				D1A854151DD968C000607C0A /* FGFastInit.m in Sources */,
+				D12ED1521DDC42F40072D1DE /* DSCardCell.m in Sources */,
 				D1A8543C1DD97F4500607C0A /* NSString+FG.m in Sources */,
 				D12ED1381DDC0BA40072D1DE /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				D12ED1401DDC2EA20072D1DE /* DSTravelDetailViewController.m in Sources */,

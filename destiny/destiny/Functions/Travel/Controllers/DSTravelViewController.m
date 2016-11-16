@@ -78,7 +78,6 @@
         transition.transitionType = WXSTransitionTypePush;
         transition.animationTime = GoldenScale;
         transition.animationType = WXSTransitionAnimationTypePointSpreadPresent;
-        transition.backGestureEnable = YES;
     }];
 }
 
