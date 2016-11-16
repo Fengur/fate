@@ -51,7 +51,7 @@
 {
     [super prepare];
     
-    self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
 }
 
 - (void)placeSubviews

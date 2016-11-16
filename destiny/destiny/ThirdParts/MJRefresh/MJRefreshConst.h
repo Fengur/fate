@@ -24,10 +24,10 @@
 #define MJRefreshColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 // 文字颜色
-#define MJRefreshLabelTextColor MJRefreshColor(90, 90, 90)
+#define MJRefreshLabelTextColor [UIColor whiteColor]
 
 // 字体大小
-#define MJRefreshLabelFont [UIFont boldSystemFontOfSize:14]
+#define MJRefreshLabelFont DailyFont(13.f)
 
 // 常量
 UIKIT_EXTERN const CGFloat MJRefreshLabelLeftInset;
