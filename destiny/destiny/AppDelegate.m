@@ -23,14 +23,14 @@
     [self.window makeKeyAndVisible];
     _adVC = [[DSADViewController alloc]init];
     _window.rootViewController = _adVC;
-
+    
     return YES;
 }
 
 
 - (void)setAppRootVC{
-        _tabBarVC = [[FGTabBarController alloc]init];
-        _window.rootViewController = _tabBarVC.tabBarController;
+    _tabBarVC = [[FGTabBarController alloc]init];
+    _window.rootViewController = _tabBarVC.tabBarController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

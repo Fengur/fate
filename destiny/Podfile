@@ -7,7 +7,10 @@ target 'destiny' do
    pod 'pop', '~> 1.0.9'
    pod 'YYModel', '~> 1.0.4'
    pod 'YYWebImage', '~> 1.0.5'
+   pod 'MMDrawerController', '~> 0.6.0'
   target 'destinyTests' do
+# d, drop = remove commit
+#
     inherit! :search_paths
     # Pods for testing
   end

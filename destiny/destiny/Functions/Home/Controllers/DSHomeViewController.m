@@ -148,25 +148,7 @@
 
 
 - (void)requestJokeWithPage:(NSString *)pageNumber{
-    [FGHttpTool updateBaseUrl:JokeUrl];
-    NSMutableDictionary *dict = [NSMutableDictionary new];
-    [dict setObject:pageNumber forKey:@"page"];
-    [FGHttpTool getWithURL:@"" params:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSMutableArray *resultArray = [[responseObject objectForKey:JokeRes_Body]objectForKey:@"contentlist"];
-        
-        
-        for(int i =0;i<resultArray.count;i++){
-            DSJokeModel *model = [DSJokeModel new];
-            model = [DSJokeModel yy_modelWithDictionary:resultArray[i]];
-            [_jokeArray addObject:model];
-        }
-        [_containTableView reloadData];
-        [_containTableView.mj_header endRefreshing];
-        [_containTableView.mj_footer endRefreshing];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [_containTableView.mj_header endRefreshing];
-        [_containTableView.mj_footer endRefreshing];
-    }];
+
 }
 
 

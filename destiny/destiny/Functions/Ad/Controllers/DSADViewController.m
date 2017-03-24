@@ -31,7 +31,7 @@
     _currentModel.content = DefaultSentence;
     _currentModel.mrname = DefaultAutor;
     [self requestForContent];
-
+    
 }
 
 
@@ -46,10 +46,9 @@
     _contentLabel.textAlignment = NSTextAlignmentCenter;
     _contentLabel.transform = CGAffineTransformMakeScale(0, 0);
     
-    
     [UIView animateWithDuration:3 animations:^{
         _contentLabel.alpha = 1;
-            _contentLabel.transform = CGAffineTransformMakeScale(1, 1);
+        _contentLabel.transform = CGAffineTransformMakeScale(1, 1);
         _godImage.alpha = 0.3;
     } completion:^(BOOL finished) {
         
@@ -60,54 +59,14 @@
             _contentLabel.y = _contentLabel.y + 120;
             _godImage.alpha = 1;
         } completion:^(BOOL finished) {
-            
             [SharedApp setAppRootVC];
-            
         }];
-        
     }];
 }
 
 - (void)requestForContent{
-    [FGHttpTool updateBaseUrl:SentenceUrl];
-    NSMutableDictionary *paramDict = [[NSMutableDictionary alloc]init];
-    [FGHttpTool getWithURL:@"" params:paramDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSData *doubi = responseObject;
-        
-        NSString *shabi =  [[NSString alloc]initWithData:doubi encoding:NSUTF8StringEncoding];
-        id response = [responseObject objectForKey:@"newslist"];
-        _currentModel = [DSSentenceModel yy_modelWithDictionary:response[0]];
-        [self setupUIControls];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            [self setupUIControls];
-    }];
+    [self setupUIControls];
 }
-- (NSMutableAttributedString *)setColorAttributeStringWithString:(NSString *)string {
-    NSArray *seletcArray = [string componentsSeparatedByString:@"\n\n"];
-    NSInteger sizeCount;
-    if (seletcArray.count > 0) {
-        sizeCount = ((NSString *)seletcArray[0]).length + 1;
-    }
-    NSMutableAttributedString *hintString =
-    [[NSMutableAttributedString alloc] initWithString:string];
-    NSRange range1 = NSMakeRange(0, sizeCount);
-    NSRange range2 = NSMakeRange(sizeCount, hintString.length - sizeCount);
-    [hintString addAttribute:NSFontAttributeName
-                       value:DailyFont(20.f)
-                       range:range1];
-    [hintString addAttribute:NSForegroundColorAttributeName
-                       value:[UIColor whiteColor]
-                       range:range1];
-    
-    [hintString addAttribute:NSFontAttributeName
-                       value:DailyFont(15.f)
-                       range:range2];
-    [hintString addAttribute:NSForegroundColorAttributeName
-                       value:[UIColor whiteColor]
-                       range:range2];
-    return hintString;
-}
-
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;

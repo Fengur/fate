@@ -8,6 +8,7 @@
 
 #import "DSJokeCell.h"
 #import "DSJokeModel.h"
+
 @interface DSJokeCell(){
     UIView *_backView;
     UILabel *_containLabel;
@@ -63,7 +64,6 @@
     _containLabel = [[UILabel alloc]init];
     [_backView addSubview:_containLabel];
 }
-
 
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
