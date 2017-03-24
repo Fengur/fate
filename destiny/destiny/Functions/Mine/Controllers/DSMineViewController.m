@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor ghostWhite];
-    self.title = @"吾人";
+    self.title = @"Notes";
 }
 
 - (void)didReceiveMemoryWarning {

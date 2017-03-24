@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"笑之";
+    self.title = @"Relax";
     [self setupTabLeView];
     _backView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _backView.backgroundColor = [UIColor blackColor];

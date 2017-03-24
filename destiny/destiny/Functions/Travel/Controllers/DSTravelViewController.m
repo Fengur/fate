@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"无游";
+    self.title = @"See";
     self.view.backgroundColor = [UIColor blackColor];
     _travelArray = [NSMutableArray new];
     

@@ -35,16 +35,15 @@
 }
 
 
-
 - (void)setupUIControls{
-    _contentLabel = [[UILabel alloc]initWithFrame:CGRectMake(Padding, ScreenHeight*GoldenScale, ScreenWidth-2*Padding, 0)];
+    _contentLabel = [[UILabel alloc]initWithFrame:CGRectMake(Padding, ScreenHeight*GoldenScale, ScreenWidth-Padding*2, 60)];
     _contentLabel.numberOfLines = 0;
     _contentLabel.textColor = [UIColor whiteColor];
-    _contentLabel.text = [NSString stringWithFormat:@"%@\n\n————\t%@",_currentModel.content,_currentModel.mrname];
+    _contentLabel.text = [NSString stringWithFormat:@"%@\n\n\t%@",_currentModel.content,_currentModel.mrname];
     [self.view addSubview:_contentLabel];
-    _contentLabel.attributedText = [self setColorAttributeStringWithString:_contentLabel.text];
-    [_contentLabel sizeToFit];
+    _contentLabel.font = DailyFont(20.f);
     _contentLabel.alpha = 0;
+    _contentLabel.textAlignment = NSTextAlignmentCenter;
     _contentLabel.transform = CGAffineTransformMakeScale(0, 0);
     
     
@@ -54,10 +53,12 @@
         _godImage.alpha = 0.3;
     } completion:^(BOOL finished) {
         
-         [NSThread sleepForTimeInterval:2];
+        [NSThread sleepForTimeInterval:1.5];
         [UIView animateWithDuration:3.f animations:^{
-            _contentLabel.alpha = 0.2;
-            _godImage.alpha = 0.3;
+            
+            _contentLabel.alpha = 0.618;
+            _contentLabel.y = _contentLabel.y + 120;
+            _godImage.alpha = 1;
         } completion:^(BOOL finished) {
             
             [SharedApp setAppRootVC];
@@ -69,7 +70,11 @@
 
 - (void)requestForContent{
     [FGHttpTool updateBaseUrl:SentenceUrl];
-    [FGHttpTool getWithURL:@"" params:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSMutableDictionary *paramDict = [[NSMutableDictionary alloc]init];
+    [FGHttpTool getWithURL:@"" params:paramDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSData *doubi = responseObject;
+        
+        NSString *shabi =  [[NSString alloc]initWithData:doubi encoding:NSUTF8StringEncoding];
         id response = [responseObject objectForKey:@"newslist"];
         _currentModel = [DSSentenceModel yy_modelWithDictionary:response[0]];
         [self setupUIControls];
@@ -88,14 +93,14 @@
     NSRange range1 = NSMakeRange(0, sizeCount);
     NSRange range2 = NSMakeRange(sizeCount, hintString.length - sizeCount);
     [hintString addAttribute:NSFontAttributeName
-                       value:DailyFont(30.f)
+                       value:DailyFont(20.f)
                        range:range1];
     [hintString addAttribute:NSForegroundColorAttributeName
                        value:[UIColor whiteColor]
                        range:range1];
     
     [hintString addAttribute:NSFontAttributeName
-                       value:DailyFont(20.f)
+                       value:DailyFont(15.f)
                        range:range2];
     [hintString addAttribute:NSForegroundColorAttributeName
                        value:[UIColor whiteColor]

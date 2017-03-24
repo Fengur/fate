@@ -76,19 +76,19 @@
     NSDictionary *dict1 = @{
         CYLTabBarItemImage : @"one_N",
         CYLTabBarItemSelectedImage : @"one_S",
-        CYLTabBarItemTitle : @"笑之"
+        CYLTabBarItemTitle : @"Relax"
     };
 
     NSDictionary *dict2 = @{
         CYLTabBarItemImage : @"two_N",
         CYLTabBarItemSelectedImage : @"two_S",
-        CYLTabBarItemTitle : @"吾人"
+        CYLTabBarItemTitle : @"Notes"
     };
 
     NSDictionary *dict3 = @{
         CYLTabBarItemImage : @"three_N",
         CYLTabBarItemSelectedImage : @"three_S",
-        CYLTabBarItemTitle : @"无游"
+        CYLTabBarItemTitle : @"See"
     };
     NSDictionary *dict4 = @{
         CYLTabBarItemImage : @"mineNormal",

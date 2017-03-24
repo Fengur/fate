@@ -15,7 +15,13 @@
 #define JokeUrl @"http://apis.baidu.com/showapi_open_bus/showapi_joke/joke_text"
 
 // 名言警句
-#define SentenceUrl @"http://apis.baidu.com/txapi/dictum/dictum"
+#define SentenceUrl @"http://hello.api.235dns.com/api.php"
 
 // 热门游记
 #define TravelUrl @"http://apis.baidu.com/qunartravel/travellist/travellist"
+
+
+
+#define AvandaKey @"3793d03f632f483cabb108e67a7fb24d"
+
+#define AvandaJoke @"http://api.avatardata.cn/Joke/QueryJokeByTime"

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define DefaultSentence @"不是我以天下人为猪狗，我就是猪狗"
-#define DefaultAutor @"江南——《九州缥缈录》"
+#define DefaultSentence @"Stay hungry, Stay foolish"
+#define DefaultAutor @""
 
 @interface DSSentenceModel : NSObject
 

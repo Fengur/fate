@@ -163,7 +163,9 @@ static NSString *netErrorImageName = @"";
            failure:(httpFailureBlock)failure {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     AFHTTPSessionManager *manager = [self managerInit];
-
+//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager GET:url
         parameters:params
         progress:^(NSProgress *_Nonnull downloadProgress) {
