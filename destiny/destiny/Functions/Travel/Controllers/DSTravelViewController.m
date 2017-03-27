@@ -154,7 +154,7 @@
 
 
 - (void)requestTravelListWithPageNumber:(NSString *)page{
-    [FGHttpTool updateBaseUrl:TravelUrl];
+    
     NSMutableDictionary *paramDict = [[NSMutableDictionary alloc]init];
     [paramDict setObject:page forKey:@"page"];
     [FGHttpTool getWithURL:@"" params: paramDict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
