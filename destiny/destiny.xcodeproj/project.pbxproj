@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B7BB82B5EAC02C938E4A6ED /* libPods-destinyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */; };
 		8BBF007D111A83336FF361EC /* libPods-destinyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32556110487F675B55EB337C /* libPods-destinyUITests.a */; };
+		8D9597A51E88D07900794A9E /* BookPartList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D9597A41E88D07900794A9E /* BookPartList.plist */; };
 		B745E0FA1F4E2F7407447D5D /* libPods-destiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F4DCC21B1E42C821EECDAD /* libPods-destiny.a */; };
-		D1130AB01DD9A0F000632D19 /* DSJokeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1130AAF1DD9A0F000632D19 /* DSJokeModel.m */; };
+		D1130AB01DD9A0F000632D19 /* DSJuziModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1130AAF1DD9A0F000632D19 /* DSJuziModel.m */; };
 		D1130AB31DD9A10900632D19 /* DSJokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1130AB21DD9A10900632D19 /* DSJokeCell.m */; };
 		D12ED12E1DDC0BA40072D1DE /* UINavigationController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED10E1DDC0BA40072D1DE /* UINavigationController+WXSTransition.m */; };
 		D12ED12F1DDC0BA40072D1DE /* UIViewController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D12ED1101DDC0BA40072D1DE /* UIViewController+WXSTransition.m */; };
@@ -115,9 +116,10 @@
 		3BCFC3BCA58A0C8C9DC18428 /* Pods-destiny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destiny.release.xcconfig"; path = "Pods/Target Support Files/Pods-destiny/Pods-destiny.release.xcconfig"; sourceTree = "<group>"; };
 		4B70A09E825CE7DF4798ADC7 /* libPods-destinyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-destinyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		629E109F3560924944C9AC68 /* Pods-destiny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destiny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-destiny/Pods-destiny.debug.xcconfig"; sourceTree = "<group>"; };
+		8D9597A41E88D07900794A9E /* BookPartList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookPartList.plist; sourceTree = "<group>"; };
 		A66875B7B9711737116FF14C /* Pods-destinyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-destinyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-destinyUITests/Pods-destinyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D1130AAE1DD9A0F000632D19 /* DSJokeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSJokeModel.h; sourceTree = "<group>"; };
-		D1130AAF1DD9A0F000632D19 /* DSJokeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSJokeModel.m; sourceTree = "<group>"; };
+		D1130AAE1DD9A0F000632D19 /* DSJuziModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSJuziModel.h; sourceTree = "<group>"; };
+		D1130AAF1DD9A0F000632D19 /* DSJuziModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSJuziModel.m; sourceTree = "<group>"; };
 		D1130AB11DD9A10900632D19 /* DSJokeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSJokeCell.h; sourceTree = "<group>"; };
 		D1130AB21DD9A10900632D19 /* DSJokeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSJokeCell.m; sourceTree = "<group>"; };
 		D1130AB41DD9A8FA00632D19 /* DSHttpPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHttpPort.h; sourceTree = "<group>"; };
@@ -324,6 +326,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D9597A31E88D04100794A9E /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				8D9597A41E88D07900794A9E /* BookPartList.plist */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		9B21B531633747901B7E0FDF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,8 +509,8 @@
 		D15B36911DD962A900A8A0C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D1130AAE1DD9A0F000632D19 /* DSJokeModel.h */,
-				D1130AAF1DD9A0F000632D19 /* DSJokeModel.m */,
+				D1130AAE1DD9A0F000632D19 /* DSJuziModel.h */,
+				D1130AAF1DD9A0F000632D19 /* DSJuziModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -808,6 +818,7 @@
 		D1B401951DCC58C800252F8D /* destiny */ = {
 			isa = PBXGroup;
 			children = (
+				8D9597A31E88D04100794A9E /* Collections */,
 				D15B368C1DD960CC00A8A0C3 /* Functions */,
 				D15B368A1DD960CC00A8A0C3 /* Config */,
 				D15B368D1DD9622500A8A0C3 /* ThirdParts */,
@@ -1103,6 +1114,7 @@
 				D1A8541E1DD9787B00607C0A /* TpldKhangXiDictTrial.otf in Resources */,
 				D1FAE14F1DD9D27A00FADBC8 /* MJRefresh.bundle in Resources */,
 				D1B401A31DCC58C800252F8D /* Assets.xcassets in Resources */,
+				8D9597A51E88D07900794A9E /* BookPartList.plist in Resources */,
 				D1A8541C1DD9787B00607C0A /* Cosmic Love-.ttf in Resources */,
 				D1A8541F1DD9787B00607C0A /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */,
 			);
@@ -1252,7 +1264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1130AB01DD9A0F000632D19 /* DSJokeModel.m in Sources */,
+				D1130AB01DD9A0F000632D19 /* DSJuziModel.m in Sources */,
 				D1FAE1461DD9D27A00FADBC8 /* MJRefreshAutoGifFooter.m in Sources */,
 				D1FAE14B1DD9D27A00FADBC8 /* MJRefreshBackStateFooter.m in Sources */,
 				D1FAE1441DD9D27A00FADBC8 /* MJRefreshFooter.m in Sources */,

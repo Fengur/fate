@@ -6,8 +6,8 @@
 //  Copyright © 2016年 code.sogou.fengur. All rights reserved.
 //
 
-#import "DSJokeModel.h"
+#import "DSJuziModel.h"
 
-@implementation DSJokeModel
+@implementation DSJuziModel
 
 @end

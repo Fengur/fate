@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define DefaultSentence @"Stay hungry, Stay foolish"
+#define DefaultSentence1 @"Slow Down Your Heart"
 #define DefaultAutor @""
 
 @interface DSSentenceModel : NSObject

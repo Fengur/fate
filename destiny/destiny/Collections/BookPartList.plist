@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BookList</key>
+	<array>
+		<dict>
+			<key>Juzi</key>
+			<string>其实所谓悲愁，无非是过去之人不可追、现在之心不可安、将来之事不可知，这是万古之愁，不会变的。</string>
+			<key>Autor</key>
+			<string>江南</string>
+			<key>From</key>
+			<string>《九州缥缈录》</string>
+		</dict>
+	</array>
+</dict>
+</plist>

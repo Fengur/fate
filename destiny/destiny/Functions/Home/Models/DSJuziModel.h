@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DSJokeModel : NSObject
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *text;
-@property (nonatomic, assign) NSInteger type;
+@interface DSJuziModel : NSObject
+
+@property (nonatomic, copy) NSString *juzi;
+@property (nonatomic, copy) NSString *autor;
+@property (nonatomic, copy) NSString *from;
 @end

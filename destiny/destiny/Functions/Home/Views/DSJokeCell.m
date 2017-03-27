@@ -7,7 +7,7 @@
 //
 
 #import "DSJokeCell.h"
-#import "DSJokeModel.h"
+#import "DSJuziModel.h"
 
 @interface DSJokeCell(){
     UIView *_backView;
@@ -32,18 +32,18 @@
 }
 
 - (void)setJokeCellDetailWithModel:(DSJokeModel *)jokeModel{
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"</p>" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"\t" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"1、" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"2、" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"3、" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"4、" withString:@""];
-    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"5、" withString:@""];
-    
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"</p>" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"1、" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"2、" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"3、" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"4、" withString:@""];
+//    jokeModel.text = [jokeModel.text stringByReplacingOccurrencesOfString:@"5、" withString:@""];
+//    
     _containLabel.numberOfLines = 0;
-    _containLabel.text = jokeModel.text;
+//    _containLabel.text = jokeModel.text;
     _containLabel.font = SingleFont(16.f);
     _containLabel.frame = CGRectMake(Padding*GoldenScale, Spadding, _backView.width-Padding, 0);
     _containLabel.attributedText = [self setAttributeStringWithString:_containLabel.text];

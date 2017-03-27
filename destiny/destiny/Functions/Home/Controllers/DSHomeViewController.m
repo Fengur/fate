@@ -8,13 +8,13 @@
 
 #import "DSHomeViewController.h"
 #import "DSJokeCell.h"
-#import "DSJokeModel.h"
+#import "DSJuziModel.h"
 #import "UITableView+FG.h"
 #import "MJRefresh.h"
 
 #define JokeRes_Body @"showapi_res_body"
 @interface DSHomeViewController ()<UITableViewDelegate,UITableViewDataSource>{
-    NSMutableArray *_jokeArray;
+    NSMutableArray *_juziArray;
     CGFloat historyY;
     UIView *_backView;
     NSInteger _currentPage;
@@ -25,12 +25,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //获取已有完整路径
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"BookPartList" ofType:@"plist"];
+    NSMutableDictionary *usersDic = [[NSMutableDictionary alloc]initWithContentsOfFile:plistPath];
+    //读取手动创建的plist文件的属性的值。
+    
     self.title = @"Relax";
     [self setupTabLeView];
     _backView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     _backView.backgroundColor = [UIColor blackColor];
     [[UIApplication sharedApplication].keyWindow addSubview:_backView];
-    _jokeArray = [NSMutableArray new];
+    _juziArray = [NSMutableArray new];
     _currentPage = 1;
     [self requestJokeWithPage:@"1"];
     
@@ -101,14 +106,14 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     DSJokeCell *cell = [[DSJokeCell alloc] initWithStyle:UITableViewCellStyleDefault
                                          reuseIdentifier:@"cellID"];
-    if(_jokeArray.count>0){
-        [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
+    if(_juziArray.count>0){
+        [cell setJokeCellDetailWithModel:(DSJokeModel *)_juziArray[indexPath.row]];
     }
     return [cell getCellHeight];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _jokeArray.count;
+    return _juziArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -119,8 +124,8 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
-    if(_jokeArray.count>0){
-        [cell setJokeCellDetailWithModel:(DSJokeModel *)_jokeArray[indexPath.row]];
+    if(_juziArray.count>0){
+        
     }
     return cell;
 }
@@ -137,7 +142,7 @@
 
 - (void)headerReresh{
     _currentPage = 1;
-    [_jokeArray removeAllObjects];
+    [_juziArray removeAllObjects];
     [self requestJokeWithPage:@"1"];
 }
 

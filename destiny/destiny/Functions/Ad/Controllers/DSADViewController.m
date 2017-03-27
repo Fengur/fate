@@ -9,6 +9,7 @@
 #import "DSADViewController.h"
 #import "DSSentenceModel.h"
 #import "AppDelegate.h"
+
 @interface DSADViewController (){
     UILabel *_contentLabel;
     UILabel *_autorLabel;
@@ -28,7 +29,7 @@
     _godImage.image = ImageOfName(@"god");
     [self.view addSubview:_godImage];
     _currentModel = [DSSentenceModel new];
-    _currentModel.content = DefaultSentence;
+    _currentModel.content = DefaultSentence1;
     _currentModel.mrname = DefaultAutor;
     [self requestForContent];
     
